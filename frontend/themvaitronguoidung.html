@@ -1,0 +1,2626 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Thêm Vai trò</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/roles">Vai trò người dùng</a>
+    </div>
+    <div class="breadcrumb-item">Thêm</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <div class="row">
+    <div class="col-12">
+    <div class="card">
+    <div class="card-body">
+    <form action="https://edulms.di4l.vn/lms/admin/roles/store" method="Post">
+    <input type="hidden" name="_token" value="EAOYdY4mEbEd0IFFLkpho0ARpQRonycmk5g0n27r">
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+    <div class="form-group ">
+    <label>Tên</label>
+    <input type="text" name="name" class="form-control" value="" placeholder="">
+    </div>
+    <div class="form-group ">
+    <label>Chú thích</label>
+    <input type="text" name="caption" class="form-control" value="" placeholder="Ví dụ. nhân viên tài chính">
+    </div>
+    <div class="form-group mb-1">
+    <label class="custom-switch pl-0">
+    <input id="isAdmin" type="checkbox" name="is_admin" class="custom-switch-input section-parent">
+    <span class="custom-switch-indicator"></span>
+    <span class="custom-switch-description">Truy cập bảng Admin</span>
+    </label>
+    </div>
+    <div class="text-muted text-small mt-1">Bật tính năng này để tạo quản trị viên hoặc nhân viên.</div>
+    </div>
+    </div>
+    <div class="form-group d-none" id="sections">
+    <h2 class="section-title">Quyền</h2>
+    <p class="section-lead">
+    Kiểm tra các menu, menu phụ và các thao tác mà bạn muốn cho phép người dùng.
+    </p>
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1" value="1" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1">
+    General Dashboard
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2" value="2" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2">
+    General Dashboard page
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_3" value="3" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_3">
+    Quick access links in General Dashboard
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_4" value="4" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_4">
+    Daily Sales Type Statistics Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_5" value="5" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_5">
+    Income Statistics Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_6" value="6" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_6">
+    Total Sales Statistics Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_7" value="7" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_7">
+    New Sales Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_8" value="8" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_8">
+    New Comments Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_9" value="9" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_9">
+    New Tickets Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_10" value="10" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_10">
+    New Reviews Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_11" value="11" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_11">
+    Sales Statistics Chart
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_12" value="12" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_12">
+    Recent comments Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_13" value="13" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_13">
+    Recent tickets Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_14" value="14" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_14">
+    Recent webinars Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_15" value="15" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_15">
+    Recent courses Section
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_16" value="16" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_16">
+    Users Statistics Chart
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_17" value="17" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_17">
+    Clear cache
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+     <input type="checkbox" name="permissions[]" id="permissions_25" value="25" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_25">
+    Marketing Dashboard
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_26" value="26" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_26">
+    Marketing Dashboard page
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_50" value="50" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_50">
+    Roles
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_51" value="51" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_51">
+    Roles List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_52" value="52" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_52">
+    Roles Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_53" value="53" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_53">
+    Roles Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_54" value="54" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_54">
+    Roles Delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_100" value="100" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_100">
+    Users
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_101" value="101" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_101">
+    Staffs list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_102" value="102" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_102">
+    Students list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_103" value="103" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_103">
+    Instructors list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_104" value="104" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_104">
+    Organizations list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_105" value="105" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_105">
+    Users Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_106" value="106" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_106">
+    Users Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_107" value="107" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_107">
+    Users Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_108" value="108" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_108">
+    List Export excel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_109" value="109" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_109">
+    Users Badges
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_110" value="110" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_110">
+    Badges edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_111" value="111" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_111">
+    Badges delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_112" value="112" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_112">
+    users impersonate (login by users)
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_113" value="113" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_113">
+    Lists of requests for become instructors
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_114" value="114" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_114">
+    Reject requests for become instructors
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_115" value="115" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_115">
+    Delete requests for become instructors
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_116" value="116" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_116">
+    Edit user registration package
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_117" value="117" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_117">
+    Edit user meeting settings
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_150" value="150" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_150">
+    Webinars
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_151" value="151" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_151">
+    Webinars List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_152" value="152" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_152">
+    Webinars Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_153" value="153" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_153">
+    Webinars Edit
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_154" value="154" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_154">
+    Webinars Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_155" value="155" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_155">
+    Export excel webinars list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_156" value="156" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_156">
+    Feature webinars list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_157" value="157" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_157">
+    create feature webinar
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_158" value="158" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_158">
+    Feature webinar export excel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_159" value="159" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_159">
+    Webinar students Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_160" value="160" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_160">
+    Send notification to course students
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_161" value="161" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_161">
+    Course statistics
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_162" value="162" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_162">
+    Agora history lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_163" value="163" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_163">
+    Agora history export
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_164" value="164" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_164">
+    Forum Question Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_165" value="165" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_165">
+    Forum Answers Lists
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_200" value="200" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_200">
+    Categories
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_201" value="201" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_201">
+    Categories List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_202" value="202" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_202">
+    Categories Create
+     </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_203" value="203" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_203">
+    Categories Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_204" value="204" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_204">
+    Categories Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_205" value="205" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_205">
+    Trends Categories List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_206" value="206" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_206">
+    Create Trend Categories
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_207" value="207" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_207">
+    Edit Trend Categories
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_208" value="208" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_208">
+    Delete Trend Categories
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_250" value="250" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_250">
+    Tags
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_251" value="251" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_251">
+    Tags List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_252" value="252" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_252">
+    Tags Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_253" value="253" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_253">
+    Tags Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_254" value="254" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_254">
+    Tags Delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_300" value="300" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_300">
+    Filters
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_301" value="301" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_301">
+    Filters List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_302" value="302" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_302">
+    Filters Create
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_303" value="303" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_303">
+    Filters Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_304" value="304" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_304">
+    Filters Delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_350" value="350" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_350">
+    Quizzes
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_351" value="351" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_351">
+    Quizzes List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_352" value="352" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_352">
+    Create Quiz
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_353" value="353" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_353">
+    Edit Quiz
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_354" value="354" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_354">
+    Delete Quiz
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_355" value="355" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_355">
+    Quizzes results
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_356" value="356" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_356">
+    Quizzes results delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_357" value="357" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_357">
+     Quizzes export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_400" value="400" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_400">
+    Quiz Result
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_401" value="401" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_401">
+    Quiz Result List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_402" value="402" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_402">
+    Quiz Result Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_403" value="403" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_403">
+    Quiz Result Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_404" value="404" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_404">
+    Quiz Result Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_405" value="405" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_405">
+    quiz result export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_450" value="450" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_450">
+    Certificate
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_451" value="451" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_451">
+    Certificate List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_452" value="452" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_452">
+    Certificate Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_453" value="453" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_453">
+    Certificate Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_454" value="454" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_454">
+    Certificate Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_455" value="455" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_455">
+    Certificate template lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_456" value="456" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_456">
+    Certificate template create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_457" value="457" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_457">
+    Certificate template edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_458" value="458" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_458">
+    Certificate template delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_459" value="459" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_459">
+    Certificates export excel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_460" value="460" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_460">
+    Course Competition Certificates
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_500" value="500" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_500">
+    Discount codes
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_501" value="501" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_501">
+    Discount codes list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_502" value="502" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_502">
+    Discount codes create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_503" value="503" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_503">
+    Discount codes edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_504" value="504" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_504">
+    Discount codes delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_505" value="505" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_505">
+    Discount codes export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_550" value="550" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_550">
+    Groups
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_551" value="551" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_551">
+    Groups List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_552" value="552" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_552">
+    Groups Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_553" value="553" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_553">
+    Groups Edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_554" value="554" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_554">
+    Groups Delete
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_555" value="555" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_555">
+    Update group registration package
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_600" value="600" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_600">
+    Payment Channels
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_601" value="601" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_601">
+    Payment Channels List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_602" value="602" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_602">
+    active or inactive channel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_603" value="603" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_603">
+    Payment Channels Edit
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_650" value="650" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_650">
+    settings
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_651" value="651" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_651">
+    General settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_652" value="652" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_652">
+    Financial settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_653" value="653" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_653">
+    Personalization settings
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_654" value="654" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_654">
+    Notifications settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_655" value="655" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_655">
+    Seo settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_656" value="656" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_656">
+    Customization settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_657" value="657" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_657">
+    Notifications settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_658" value="658" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_658">
+    Home sections settings
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_700" value="700" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_700">
+    Blog
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_701" value="701" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_701">
+    Blog lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_702" value="702" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_702">
+    Blog create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_703" value="703" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_703">
+    Blog edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_704" value="704" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_704">
+    Blog delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_705" value="705" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_705">
+    Blog categories list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_706" value="706" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_706">
+    Blog categories create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_707" value="707" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_707">
+    Blog categories edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_708" value="708" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_708">
+    Blog categories delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_750" value="750" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_750">
+    Sales
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_751" value="751" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_751">
+    Sales List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_752" value="752" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_752">
+    Sales Refund
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_753" value="753" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_753">
+    Sales invoice
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_754" value="754" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_754">
+    Sales Export Excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+     <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_800" value="800" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_800">
+    Balances
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_801" value="801" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_801">
+    Balances List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_802" value="802" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_802">
+    Balances Create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_803" value="803" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_803">
+    Balances print
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_850" value="850" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_850">
+    Payout
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_851" value="851" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_851">
+    Payout List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_852" value="852" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_852">
+    Payout Reject
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_853" value="853" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_853">
+    Payout accept
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_854" value="854" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_854">
+    Payout export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+     <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_900" value="900" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_900">
+    Offline Payments
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_901" value="901" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_901">
+    Offline Payments List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_902" value="902" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_902">
+    Offline Payments Reject
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_903" value="903" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_903">
+    Offline Payments Approved
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_904" value="904" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_904">
+    Offline Payments export excel
+    </label>
+     </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_950" value="950" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_950">
+    Supports
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_951" value="951" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_951">
+    Supports List
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_952" value="952" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_952">
+    Send Support
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_953" value="953" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_953">
+    Supports reply
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_954" value="954" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_954">
+    Supports delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_955" value="955" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_955">
+    Support departments lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_956" value="956" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_956">
+    Create support department
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_957" value="957" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_957">
+    Edit support departments
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_958" value="958" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_958">
+    Delete support department
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_959" value="959" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_959">
+    Course conversations
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1000" value="1000" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1000">
+    Subscribes
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1001" value="1001" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1001">
+    Subscribes list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1002" value="1002" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1002">
+    Subscribes create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1003" value="1003" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1003">
+    Subscribes edit
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1004" value="1004" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1004">
+    Subscribes delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1050" value="1050" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1050">
+    Notifications
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1051" value="1051" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1051">
+    Notifications list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1052" value="1052" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1052">
+    Send Notifications
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1053" value="1053" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_1053">
+    Edit and details Notifications
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1054" value="1054" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1054">
+    Delete Notifications
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1055" value="1055" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1055">
+    Mark All Read Notifications
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1056" value="1056" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1056">
+    Notifications templates
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1057" value="1057" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1057">
+    Create notification template
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1058" value="1058" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1058">
+    Edit notification template
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1059" value="1059" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1059">
+    Delete notification template
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1060" value="1060" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1060">
+    Notifications Posted list
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1075" value="1075" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1075">
+    Noticeboards
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1076" value="1076" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1076">
+    Noticeboards list
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1077" value="1077" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1077">
+    Send Noticeboards
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1078" value="1078" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1078">
+    Edit Noticeboards
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1079" value="1079" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1079">
+    Delete Noticeboards
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1080" value="1080" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1080">
+    Course Noticeboards list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1081" value="1081" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1081">
+    Send Course Noticeboards
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1082" value="1082" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1082">
+    Edit Course Noticeboards
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1083" value="1083" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1083">
+    Delete Course Noticeboards
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1100" value="1100" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1100">
+    Promotions
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1101" value="1101" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1101">
+    Promotions list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1102" value="1102" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1102">
+    Promotion create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1103" value="1103" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1103">
+    Promotion edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1104" value="1104" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1104">
+    Promotion delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1150" value="1150" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1150">
+    testimonials
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1151" value="1151" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1151">
+    testimonials list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1152" value="1152" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1152">
+    testimonials create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1153" value="1153" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1153">
+    testimonials edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1154" value="1154" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1154">
+    testimonials delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1200" value="1200" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1200">
+    advertising
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1201" value="1201" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1201">
+    advertising banners list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1202" value="1202" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1202">
+    create advertising banner
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1203" value="1203" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1203">
+    edit advertising banner
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1204" value="1204" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1204">
+    delete advertising banner
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1230" value="1230" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1230">
+    Newsletters
+    </label>
+    </div>
+    <div class="card-body">
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1231" value="1231" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1231">
+    Newsletters lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1232" value="1232" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1232">
+    Send Newsletters
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1233" value="1233" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1233">
+    Newsletters histories
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1234" value="1234" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1234">
+    Delete newsletters item
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1235" value="1235" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1235">
+    Export excel newsletters item
+    </label>
+    </div>
+    </div>
+     </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1250" value="1250" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1250">
+    Contacts
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1251" value="1251" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1251">
+    Contacts lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1252" value="1252" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1252">
+    Contacts reply
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1253" value="1253" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1253">
+    Contacts delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+     <input type="checkbox" name="permissions[]" id="permissions_1300" value="1300" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1300">
+    product discount
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1301" value="1301" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1301">
+    product discount list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1302" value="1302" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1302">
+    create product discount
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1303" value="1303" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1303">
+    edit product discount
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1304" value="1304" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1304">
+    delete product discount
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_1305" value="1305" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1305">
+    delete product export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1350" value="1350" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1350">
+    pages
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1351" value="1351" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1351">
+    pages list
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1352" value="1352" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1352">
+    pages create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1353" value="1353" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1353">
+     pages edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1354" value="1354" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1354">
+    pages toggle publish/draft
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1355" value="1355" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1355">
+    pages delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1400" value="1400" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1400">
+    Comments
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1401" value="1401" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1401">
+    Classes comments
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_1402" value="1402" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1402">
+    Classes comments edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1403" value="1403" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1403">
+    Classes comments reply
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1404" value="1404" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1404">
+    Classes comments delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1405" value="1405" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1405">
+    Classes comments status (active or pending)
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1406" value="1406" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1406">
+    Blog comments
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1407" value="1407" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1407">
+    Blog comments edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1408" value="1408" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1408">
+    Blog comments reply
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1409" value="1409" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1409">
+    Blog comments delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1410" value="1410" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1410">
+    Blog comments status (active or pending)
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1411" value="1411" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1411">
+    Product comments
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1412" value="1412" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1412">
+    Product comments edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1413" value="1413" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1413">
+    Product comments reply
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1414" value="1414" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1414">
+    Product comments delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1415" value="1415" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1415">
+    Product comments status (active or pending)
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1450" value="1450" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1450">
+    Reports
+    </label>
+    </div>
+     <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1451" value="1451" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1451">
+    Classes reports
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1452" value="1452" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1452">
+    Classes Comments reports
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1453" value="1453" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1453">
+    Classes reports delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1454" value="1454" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1454">
+    Blog Comments reports
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1455" value="1455" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1455">
+    Reports reasons
+    </label>
+     </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1456" value="1456" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1456">
+    Products Comments reports
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1457" value="1457" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1457">
+    Forum Topic Posts Reports
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1500" value="1500" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1500">
+    Additional Pages
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1501" value="1501" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1501">
+    404 error page settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1502" value="1502" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1502">
+    Contact page settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1503" value="1503" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1503">
+    Footer settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1504" value="1504" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1504">
+    Top Navbar links settings
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1550" value="1550" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1550">
+    Appointments
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1551" value="1551" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1551">
+    Appointments lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1552" value="1552" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1552">
+    Appointments join
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1553" value="1553" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1553">
+    Appointments send reminder
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1554" value="1554" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1554">
+    Appointments cancel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1600" value="1600" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1600">
+    Reviews
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1601" value="1601" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1601">
+    Reviews lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1602" value="1602" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1602">
+    Reviews status toggle (publish or hidden)
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1603" value="1603" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1603">
+    Review details page
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1604" value="1604" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1604">
+    Review delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1650" value="1650" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1650">
+    Consultants
+    </label>
+    </div>
+     <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1651" value="1651" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1651">
+    Consultants lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1652" value="1652" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1652">
+    Consultants export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1675" value="1675" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1675">
+    Referrals
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1676" value="1676" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1676">
+    Referrals History
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1677" value="1677" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1677">
+    Referrals users
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1678" value="1678" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1678">
+    Export Referrals
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1725" value="1725" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1725">
+    Regions
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1726" value="1726" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1726">
+    countries lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1727" value="1727" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1727">
+    provinces lists
+     </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1728" value="1728" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1728">
+    cities lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1729" value="1729" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1729">
+    districts lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1730" value="1730" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1730">
+    create item
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1731" value="1731" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1731">
+    edit item
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1732" value="1732" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1732">
+    delete item
+    </label>
+    </div>
+     </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1750" value="1750" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1750">
+    Rewards
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1751" value="1751" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1751">
+    Rewards history
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1752" value="1752" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1752">
+    Rewards settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1753" value="1753" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1753">
+    Rewards items
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1754" value="1754" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_1754">
+    Reward item delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1775" value="1775" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1775">
+    Registration packages
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1776" value="1776" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1776">
+    packages lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1777" value="1777" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1777">
+    New package
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1778" value="1778" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1778">
+    Edit package
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1779" value="1779" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1779">
+    Delete package
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1780" value="1780" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1780">
+    Reports
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1781" value="1781" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1781">
+    Settings
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1800" value="1800" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1800">
+    Store
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1801" value="1801" class="form-check-input section-child">
+     <label class="form-check-label cursor-pointer mt-0" for="permissions_1801">
+    Products lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1802" value="1802" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1802">
+    Create New Product
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1803" value="1803" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1803">
+    Edit Product
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1804" value="1804" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1804">
+    Delete Product
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1805" value="1805" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1805">
+    Export excel Products
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1806" value="1806" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1806">
+     Store Categories Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1807" value="1807" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1807">
+    Create Store Category
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1808" value="1808" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1808">
+    Edit Store Category
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1809" value="1809" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1809">
+    Delete Store Category
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1810" value="1810" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1810">
+    Store Filters Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1811" value="1811" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1811">
+    Create Store Filter
+     </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1812" value="1812" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1812">
+    Edit Store Filter
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1813" value="1813" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1813">
+    Delete Store Filter
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1814" value="1814" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1814">
+    Store Specifications
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1815" value="1815" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1815">
+    Create New Store Specification
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1816" value="1816" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1816">
+    Edit Store Specification
+    </label>
+     </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1817" value="1817" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1817">
+    Delete Store Specification
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1818" value="1818" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1818">
+    Store Discounts Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1819" value="1819" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1819">
+    Create New Store discount
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1820" value="1820" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1820">
+    Edit Store discount
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1821" value="1821" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1821">
+    Delete Store discount
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1822" value="1822" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1822">
+    Products Orders
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1823" value="1823" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1823">
+    Products Orders Refund
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1824" value="1824" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1824">
+    Products Orders View Invoice
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1825" value="1825" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1825">
+    Products Orders Export Excel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1826" value="1826" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1826">
+    Products Orders Tracking code
+    </label>
+    </div>
+     <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1827" value="1827" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1827">
+    Reviews lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1828" value="1828" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1828">
+    Reviews status toggle (publish or hidden)
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1829" value="1829" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1829">
+    Review details page
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1830" value="1830" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1830">
+    Review delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1831" value="1831" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1831">
+    Store settings
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_1832" value="1832" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1832">
+    In-house products
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1833" value="1833" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1833">
+    In-house Products Orders
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1834" value="1834" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1834">
+    Products Sellers
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1835" value="1835" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1835">
+    In-house Products Delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1836" value="1836" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1836">
+    In-house Products Export Excel
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1837" value="1837" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1837">
+    In-house Products Orders
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1838" value="1838" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1838">
+    Products Sellers
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1850" value="1850" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1850">
+    Webinar assignments
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1851" value="1851" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1851">
+    Assignments lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1852" value="1852" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1852">
+     Assignment students
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1853" value="1853" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1853">
+    Assignment students conversations
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1875" value="1875" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1875">
+    Users do not have access to the content
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1876" value="1876" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1876">
+    Users lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1877" value="1877" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1877">
+    Toggle active/inactive users to view content
+    </label>
+    </div>
+    </div>
+     </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1900" value="1900" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1900">
+    Bundles
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1901" value="1901" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1901">
+    Bundles Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1902" value="1902" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1902">
+    Create new Bundle
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1903" value="1903" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1903">
+    Edit bundle
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1904" value="1904" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1904">
+    Delete bundle
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1905" value="1905" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1905">
+    Export excel
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1925" value="1925" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1925">
+    Forums
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1926" value="1926" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1926">
+    Forums Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1927" value="1927" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1927">
+    Forums create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_1928" value="1928" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1928">
+    Forums edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1929" value="1929" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1929">
+    Forums delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1930" value="1930" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1930">
+    Forums topics lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1931" value="1931" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1931">
+    Forums topics create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1932" value="1932" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1932">
+    Forums topics delete
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1933" value="1933" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1933">
+    Forums topic posts
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1934" value="1934" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1934">
+    Forums topic store posts
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1950" value="1950" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1950">
+    Featured topics
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1951" value="1951" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1951">
+    Featured topics Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1952" value="1952" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1952">
+    Featured topics create
+     </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1953" value="1953" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1953">
+    Featured topics edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1954" value="1954" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1954">
+    Featured topics delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_1975" value="1975" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_1975">
+    Recommended topics
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1976" value="1976" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1976">
+    Recommended topics Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1977" value="1977" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1977">
+    Recommended topics create
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1978" value="1978" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1978">
+    Recommended topics edit
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_1979" value="1979" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_1979">
+    Recommended topics delete
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_2000" value="2000" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_2000">
+    Advertising modal
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2001" value="2001" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2001">
+     Set Advertising modal
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_2015" value="2015" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_2015">
+    Enrollment
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2016" value="2016" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2016">
+    Enrollment History
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2017" value="2017" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2017">
+    Enrollment Add Student To Items
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2018" value="2018" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2018">
+    Enrollment Block Access
+    </label>
+    </div>
+    <div class="form-check mt-1">
+     <input type="checkbox" name="permissions[]" id="permissions_2019" value="2019" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2019">
+    Enrollment Enable Access
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2020" value="2020" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2020">
+    Enrollment Export History
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2021" value="2021" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2021">
+    Enrollment Export History
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="card card-primary section-box">
+    <div class="card-header">
+    <input type="checkbox" name="permissions[]" id="permissions_2030" value="2030" class="form-check-input mt-0 section-parent">
+    <label class="form-check-label font-16 font-weight-bold cursor-pointer" for="permissions_2030">
+    Delete Account Requests
+    </label>
+    </div>
+    <div class="card-body">
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2031" value="2031" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2031">
+    Delete Account Requests Lists
+    </label>
+    </div>
+    <div class="form-check mt-1">
+    <input type="checkbox" name="permissions[]" id="permissions_2032" value="2032" class="form-check-input section-child">
+    <label class="form-check-label cursor-pointer mt-0" for="permissions_2032">
+    Delete Account Requests Confirm
+    </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class=" mt-4">
+    <button class="btn btn-primary">Lưu</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

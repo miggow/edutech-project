@@ -1,0 +1,163 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Giảm giá mới</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Giảm giá</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <div class="card">
+    <div class="card-body">
+    <div class="row">
+    <div class="col-12 col-md-8 col-lg-6">
+    <form action="https://edulms.di4l.vn/lms/admin/financial/discounts/store" method="Post">
+    <input type="hidden" name="_token" value="EAOYdY4mEbEd0IFFLkpho0ARpQRonycmk5g0n27r">
+    <div class="form-group">
+    <label>Tiêu đề</label>
+    <input type="text" name="title" class="form-control  " value="">
+    </div>
+    <div class="form-group">
+    <label class="input-label d-block">Loại chiết khấu</label>
+    <select name="discount_type" class="js-discount-type form-control ">
+    <option value="percentage" selected="">Phần trăm</option>
+    <option value="fixed_amount">Số tiền cố định</option>
+    </select>
+    <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group">
+    <label class="input-label d-block">Nguồn</label>
+    <select name="source" class="js-discount-source form-control ">
+    <option value="all">Tất cả</option>
+    <option value="course">Khoá học</option>
+    <option value="category">Danh mục</option>
+    <option value="meeting">Meeting</option>
+    <option value="product">Lưu trữ Sản phẩm</option>
+    </select>
+    <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group js-courses-input d-none">
+    <label class="input-label">Khoá học</label>
+    <select name="webinar_ids[]" multiple="" class="form-control search-webinar-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm khoá học" data-select2-id="select2-data-10-sm8c" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-11-419l" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-webinar_ids-dc-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-webinar_ids-dc-container" placeholder="Tìm kiếm khoá học" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    <div class="form-group js-categories-input d-none">
+    <label class="input-label">Danh mục</label>
+    <select name="category_ids[]" multiple="" class="form-control search-category-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm danh mục" data-select2-id="select2-data-12-26kw" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-13-t6ax" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-category_ids-z0-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-category_ids-z0-container" placeholder="Tìm kiếm danh mục" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    <div class="form-group js-products-input d-none">
+    <label class="input-label d-block">Loại sản phẩm</label>
+    <select name="product_type" class="form-control">
+    <option value="all">Tất cả</option>
+    <option value="physical">Vật lý</option>
+    <option value="virtual">Virtual</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label class="input-label d-block">Người dùng</label>
+    <select name="user_id" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm và chọn người dùng (để trống đối với tất cả người dùng)" data-select2-id="select2-data-8-1lfi" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-9-q3tt" style="width: 513.857px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-user_id-in-container"><span class="select2-selection__rendered" id="select2-user_id-in-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Tìm kiếm và chọn người dùng (để trống đối với tất cả người dùng)</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    <div class="form-group">
+    <label class="input-label d-block">Nhóm</label>
+    <select name="group_ids[]" class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Tìm kiếm và chọn một nhóm người dùng (để trống tất cả các nhóm)" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-5-dpbn">
+    <option value="3">Special Students</option>
+     <option value="2">Vip Instructors</option>
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-6-19ip" style="width: 513.857px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-group_ids-8y-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-group_ids-8y-container" placeholder="Tìm kiếm và chọn một nhóm người dùng (để trống tất cả các nhóm)" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    <div class="invalid-feedback"></div>
+    </div>
+    <div class="form-group js-percentage-inputs ">
+    <label>Phần trăm giảm giá</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+    <i class="fas fa-percentage" href=""></i>
+    </div>
+    </div>
+    <input type="number" name="percent" class="form-control text-center  " value="" placeholder="0">
+    </div>
+    </div>
+    <div class="form-group js-percentage-inputs ">
+    <label>Số tiền tối đa</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+    <i class="fas fa-dollar-sign"></i>
+    </div>
+    </div>
+    <input type="number" name="max_amount" class="form-control text-center " value="" placeholder="Số lượng phiếu giảm giá tối đa cho một đơn đặt hàng">
+    </div>
+    </div>
+    <div class="form-group js-fixed-amount-inputs d-none">
+    <label>Tổng</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+    <i class="fas fa-dollar-sign"></i>
+    </div>
+    </div>
+    <input type="number" name="amount" class="form-control text-center " value="" placeholder="số tiền chiết khấu cho một đơn hàng">
+    </div>
+    </div>
+    <div class="form-group">
+    <label>Đơn đặt hàng tối thiểu</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+    <i class="fas fa-dollar-sign"></i>
+    </div>
+    </div>
+    <input type="number" name="minimum_order" class="form-control text-center " value="" placeholder="giảm giá giữ chỗ cho đơn hàng tối thiểu">
+    </div>
+    </div>
+    <div class="form-group">
+    <label>Thời gian sử dụng</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+    <i class="fas fa-users" href=""></i>
+    </div>
+    </div>
+    <input type="number" name="count" class="form-control text-center " value="" placeholder="Số lần tối đa mà phiếu giảm giá có thể được sử dụng (Để trống sử dụng &quot;1&quot; lần.)">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="control-label" for="inputDefault">Phiếu giảm giá</label>
+    <input type="text" name="code" value="" class="form-control text-center ">
+    <div class="text-muted text-small mt-1">Người dùng sẽ sử dụng mã này để được giảm giá (Ví dụ: Merry_christmas)</div>
+    </div>
+    <div class="form-group">
+    <label class="input-label">Ngày hết hạn</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="dateRangeLabel">
+    <i class="fa fa-calendar"></i>
+    </span>
+    </div>
+    <input type="text" name="expired_at" class="form-control datetimepicker" aria-describedby="dateRangeLabel" value="">
+    <div class="invalid-feedback"></div>
+    </div>
+    </div>
+    <div class="form-group custom-switches-stacked">
+    <label class="custom-switch pl-0">
+    <input type="hidden" name="for_first_purchase" value="0">
+    <input type="checkbox" name="for_first_purchase" id="forFirstPurchaseSwitch" value="1" class="custom-switch-input">
+    <span class="custom-switch-indicator"></span>
+    <label class="custom-switch-description mb-0 cursor-pointer" for="forFirstPurchaseSwitch">Chỉ áp dụng cho lần mua đầu tiên</label>
+    </label>
+    <div class="text-muted text-small mt-1">Bằng cách kích hoạt tùy chọn này, mã sẽ có hiệu lực cho lần mua hàng đầu tiên của người dùng</div>
+    </div>
+    <div class=" mt-4">
+    <button class="btn btn-primary">Lưu</button>
+    </div>
+    </form>
+    </div>
+    </div>
+     </div>
+    </div>
+    </div>
+    </section>
+    </div>

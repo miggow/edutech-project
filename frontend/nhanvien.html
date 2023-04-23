@@ -1,0 +1,99 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Danh sách nhân viên</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Danh sách nhân viên</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <section class="card">
+    <div class="card-body">
+    <form method="get" class="mb-0">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Tìm kiếm</label>
+    <input name="full_name" type="text" class="form-control" value="">
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Vai trò</label>
+    <select name="role_id" class="form-control">
+    <option value="">Tất cả</option>
+    <option value="2">Admin role</option>
+    <option value="6">Author</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label mb-4"> </label>
+    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </section>
+    <div class="row">
+    <div class="col-12 col-md-12">
+    <div class="card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th>ID</th>
+    <th class="text-left">Tên</th>
+    <th>Vai trò người dùng</th>
+    <th>Ngày đăng kí</th>
+    <th>Trạng thái</th>
+    <th width="120">Hành động</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Danh sách nhân viên_files/logo-new.jpg" alt="Admin">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Admin</div>
+    <div class="text-primary text-small font-600-bold">00000000</div>
+    <div class="text-primary text-small font-600-bold">admin@di4l.vn</div>
+    </div>
+    </div>
+    </td>
+    <td class="text-center">Admin role</td>
+    <td>19/08/2020 | 04:49</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-success ">(Đã xác minh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/1/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-1" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/1/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

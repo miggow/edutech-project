@@ -1,0 +1,59 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Cài đặt điểm thưởng</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a></div>
+    <div class="breadcrumb-item">Cài đặt điểm thưởng</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <div class="row">
+    <div class="col-12">
+    <div class="card">
+    <div class="card-body">
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+    <form action="https://edulms.di4l.vn/lms/admin/rewards/settings" method="post">
+    <input type="hidden" name="_token" value="EAOYdY4mEbEd0IFFLkpho0ARpQRonycmk5g0n27r">
+    <input type="hidden" name="page" value="general">
+    <input type="hidden" name="name" value="rewards_settings">
+    <div class="form-group custom-switches-stacked">
+    <label class="custom-switch pl-0 d-flex align-items-center">
+    <input type="hidden" name="value[status]" value="0">
+     <input type="checkbox" name="value[status]" id="rewardsStatusSwitch" value="1" class="custom-switch-input">
+    <span class="custom-switch-indicator"></span>
+    <label class="custom-switch-description mb-0 cursor-pointer" for="rewardsStatusSwitch">Hoạt động</label>
+    </label>
+    <div class="text-muted text-small">Bằng cách kích hoạt tính năng này, hệ thống sẽ tính điểm thưởng dựa trên thao tác của người dùng</div>
+    </div>
+    <div class="form-group custom-switches-stacked">
+    <label class="custom-switch pl-0 d-flex align-items-center">
+    <input type="hidden" name="value[exchangeable]" value="0">
+    <input type="checkbox" name="value[exchangeable]" id="exchangeableSwitch" value="1" checked="&quot;checked&quot;" class="custom-switch-input">
+    <span class="custom-switch-indicator"></span>
+    <label class="custom-switch-description mb-0 cursor-pointer" for="exchangeableSwitch">Chuyển đổi điểm </label>
+    </label>
+    <div class="text-muted text-small">Bật tính năng này để cho phép người dùng chuyển đổi phần thưởng điểm của họ thành phí ví</div>
+    </div>
+    <div id="exchangeableUnitInput" class="form-group ">
+    <label>Tỉ lệ chuyển đổi điểm</label>
+    <input type="number" name="value[exchangeable_unit]" value="200" class="form-control text-center  ">
+    <div class="text-muted text-small mt-1">Người dùng sẽ nhận được 1 đơn vị tiền tệ cho số điểm này. ví dụ. nếu bạn nhập 500, người dùng sẽ nhận được 1 đô la cho mỗi 500 điểm</div>
+    </div>
+    <div class="form-group">
+    <label>Trang chính sách tích điểm</label>
+    <input type="text" name="value[want_more_points_link]" value="/pages/reward_points_system" class="form-control  ">
+    <div class="text-muted text-small mt-1">Bạn có thể tạo trang khuyến khích người dùng làm quen với tính năng này và đặt liên kết tại đây. Liên kết này sẽ được hiển thị trong bảng điều khiển của người dùng.</div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-1">Lưu</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

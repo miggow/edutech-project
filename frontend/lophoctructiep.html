@@ -1,0 +1,1068 @@
+<div class="main-content" style="min-height: 656px;">
+
+    <section class="section">
+        <div class="section-header">
+            <h1>Lớp học trực tiếp Danh sách</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+                </div>
+                <div class="breadcrumb-item">Khoá học</div>
+
+                <div class="breadcrumb-item">Lớp học trực tiếp</div>
+            </div>
+        </div>
+
+        <div class="section-body">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card card-statistic-1">
+                        <div class="card-icon bg-primary">
+                            <i class="fas fa-file-video"></i>
+                        </div>
+                        <div class="card-wrap">
+                            <div class="card-header">
+                                <h4>Tổng Lớp học trực tiếp</h4>
+                            </div>
+                            <div class="card-body">
+                                8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card card-statistic-1">
+                        <div class="card-icon bg-warning">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <div class="card-wrap">
+                            <div class="card-header">
+                                <h4>Đang chờ xem xét Lớp học trực tiếp</h4>
+                            </div>
+                            <div class="card-body">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card card-statistic-1">
+                        <div class="card-icon bg-info">
+                            <i class="fas fa-history"></i>
+                        </div>
+
+                        <div class="card-wrap">
+                            <div class="card-header">
+                                <h4>Lớp học trực tiếp đang diễn ra</h4>
+                            </div>
+                            <div class="card-body">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="card card-statistic-1">
+                        <div class="card-icon bg-success">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="card-wrap">
+                            <div class="card-header">
+                                <h4>Tổng doanh thu</h4>
+                            </div>
+                            <div class="card-body">
+                                28
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="card">
+                <div class="card-body">
+                    <form method="get" class="mb-0">
+                        <input type="hidden" name="type" value="webinar">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Tìm kiếm</label>
+                                    <input name="title" type="text" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label"> Ngày bắt đầu</label>
+                                    <div class="input-group">
+                                        <input type="date" id="from" class="text-center form-control" name="from"
+                                            value="" placeholder="Start Date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Ngày kết thúc</label>
+                                    <div class="input-group">
+                                        <input type="date" id="to" class="text-center form-control" name="to" value=""
+                                            placeholder="End Date">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Bộ lọc tìm kiếm</label>
+                                    <select name="sort" data-plugin-selecttwo="" class="form-control populate">
+                                        <option value="">Kiểu lọc</option>
+                                        <option value="has_discount">Khóa học giảm giá</option>
+                                        <option value="sales_asc">Bán hàng - Tăng dần</option>
+                                        <option value="sales_desc">Bán hàng - Giảm dần</option>
+                                        <option value="price_asc">Giá - Tăng dần</option>
+                                        <option value="price_desc">Giá - Giảm dần</option>
+                                        <option value="income_asc">Thu nhập - Tăng dần</option>
+                                        <option value="income_desc">Thu nhập - Giảm dần</option>
+                                        <option value="created_at_asc">Ngày tạo - Tăng dần</option>
+                                        <option value="created_at_desc">Ngày tạo - Giảm dần</option>
+                                        <option value="updated_at_asc">Ngày cập nhật - Tăng dần</option>
+                                        <option value="updated_at_desc">Ngày cập nhật - Giảm dần</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Giảng viên</label>
+                                    <select name="teacher_ids[]" multiple="" data-search-option="just_teacher_role"
+                                        class="form-control search-user-select2 select2-hidden-accessible"
+                                        data-placeholder="Search teachers" data-select2-id="select2-data-1-3zlf"
+                                        tabindex="-1" aria-hidden="true">
+
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" data-select2-id="select2-data-2-pizs" style="width: 241.929px;"><span
+                                            class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1"
+                                                aria-disabled="false">
+                                                <ul class="select2-selection__rendered"
+                                                    id="select2-teacher_ids-vm-container"></ul><span
+                                                    class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocorrect="off" autocapitalize="none" spellcheck="false"
+                                                        role="searchbox" aria-autocomplete="list" autocomplete="off"
+                                                        aria-describedby="select2-teacher_ids-vm-container"
+                                                        placeholder="Search teachers" style="width: 100%;"></span>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Danh Mục</label>
+                                    <select name="category_id" data-plugin-selecttwo="" class="form-control populate">
+                                        <option value="">Tất cả danh mục</option>
+
+                                        <option value="520">Thiết Kế</option>
+                                        <optgroup label="Học Thuật">
+                                            <option value="601">Toán</option>
+                                            <option value="602">Khoa học</option>
+                                            <option value="603">Ngôn ngữ</option>
+                                        </optgroup>
+                                        <option value="523">Sức khỏe &amp; Thể hình</option>
+                                        <optgroup label="Phong cách sống">
+                                            <option value="604">Phong cách sống</option>
+                                            <option value="605">Làm đẹp</option>
+                                        </optgroup>
+                                        <option value="525">Marketing</option>
+                                        <optgroup label="Kinh Doanh">
+                                            <option value="609">Quản lý</option>
+                                            <option value="610">Truyền thông</option>
+                                            <option value="611">Chiến lược kinh doanh</option>
+                                        </optgroup>
+                                        <optgroup label="Lập trình">
+                                            <option value="606">Phát triển Web</option>
+                                            <option value="607">Phát triển Mobile</option>
+                                            <option value="608">Phát triển GAME</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="input-label">Trạng thái</label>
+                                    <select name="status" data-plugin-selecttwo="" class="form-control populate">
+                                        <option value="">Tất cả trạng thái</option>
+                                        <option value="pending">Đang chờ xem xét</option>
+                                        <option value="active_not_conducted">Đã xuất bản (Không được tiến hành)</option>
+                                        <option value="active_in_progress">Đã xuất bản (Đang tiến hành)</option>
+                                        <option value="active_finished">Đã xuất bản (Hoàn thành)</option>
+                                        <option value="inactive">Bị từ chối</option>
+                                        <option value="is_draft">Nháp</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="form-group mt-1">
+                                    <label class="input-label mb-4"> </label>
+                                    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-right">
+                                <a href="https://edulms.di4l.vn/lms/admin/webinars/excel?type=webinar"
+                                    class="btn btn-primary">Xuất Excel</a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped font-14 ">
+                                    <tbody>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th class="text-left">Tiêu đề</th>
+                                            <th class="text-left">Giảng viên</th>
+                                            <th>Giá</th>
+                                            <th>Doanh thu</th>
+                                            <th>Thu nhập</th>
+                                            <th>Học viên</th>
+                                            <th>Ngày tạo</th>
+                                            <th> Ngày bắt đầu</th>
+                                            <th>Trạng thái</th>
+                                            <th width="120">Hành động</th>
+                                        </tr>
+
+                                        <tr class="text-center">
+                                            <td>2009</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/he-thong-phat-truc-tiep-trong-ung-dung-moi">Hệ
+                                                    thống phát trực tiếp trong ứng dụng mới</a>
+                                                <div class="text-small">Truyền thông</div>
+                                            </td>
+
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    10.00 ₫
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    4
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 6</div>
+                                            </td>
+
+                                            <td>42.9 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2009/students"
+                                                    target="_blank" class="">4</a>
+                                            </td>
+
+                                            <td class="font-12">2022 03/1/| 16:54</td>
+
+                                            <td class="font-12">2022 03/1/| 02:00</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2009/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2009/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2009/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=1015"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2009/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-1"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2009/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>2006</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/lam-the-nao-de-di-du-lich-vong-quanh-the-gioi">Làm
+                                                    thế nào để đi du lịch vòng quanh thế giới</a>
+                                                <div class="text-small">Phong cách sống</div>
+                                            </td>
+
+                                            <td class="text-left">Cao Minh</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    25.00 ₫
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    2
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 3</div>
+                                            </td>
+
+                                            <td>24.75 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2006/students"
+                                                    target="_blank" class="">2</a>
+                                            </td>
+
+                                            <td class="font-12">2021 07/7/| 17:38</td>
+
+                                            <td class="font-12">2022 03/2/| 00:00</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2006/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2006/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2006/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=923"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2006/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-2"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2006/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>2003</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/lang-nghe-tich-cuc-ban-co-the-tro-thanh-mot-nguoi-lang-nghe-tuyet-voi">Lắng
+                                                    nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt
+                                                    vời</a>
+                                                <div class="text-small">Truyền thông</div>
+                                            </td>
+
+                                            <td class="text-left">Nguyễn Văn Trọng</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    40.00 ₫
+                                                </span>
+
+                                                <div class="text-danger text-small font-600-bold">25% OFF</div>
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    4
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 6</div>
+                                            </td>
+
+                                            <td>149.6 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2003/students"
+                                                    target="_blank" class="">4</a>
+                                            </td>
+
+                                            <td class="font-12">2021 07/3/| 04:00</td>
+
+                                            <td class="font-12">2023 09/30/| 16:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2003/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2003/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2003/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=3"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2003/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-3"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2003/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>2002</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/lop-hoc-ve-suc-khoe-va-the-hinh">Lớp
+                                                    học về Sức khỏe và Thể hình</a>
+                                                <div class="text-small">Sức khỏe &amp; Thể hình</div>
+                                            </td>
+
+                                            <td class="text-left">Trần Thanh Hà</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    20.00 ₫
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    3
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 2</div>
+                                            </td>
+
+                                            <td>39.6 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2002/students"
+                                                    target="_blank" class="">3</a>
+                                            </td>
+
+                                            <td class="font-12">2021 07/1/| 02:56</td>
+
+                                            <td class="font-12">2021 06/30/| 15:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2002/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2002/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2002/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=870"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2002/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-4"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2002/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>2001</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/khoa-hoc-ve-angularjs">Khoá
+                                                    học về AngularJS</a>
+                                                <div class="text-small">Phát triển Web</div>
+                                            </td>
+
+                                            <td class="text-left">Nguyễn Văn Trọng</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    20.00 ₫
+                                                </span>
+
+                                                <div class="text-danger text-small font-600-bold">20% OFF</div>
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    2
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 8</div>
+                                            </td>
+
+                                            <td>35.2 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2001/students"
+                                                    target="_blank" class="">2</a>
+                                            </td>
+
+                                            <td class="font-12">2021 06/30/| 13:29</td>
+
+                                            <td class="font-12">2023 12/9/| 15:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2001/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2001/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2001/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=3"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2001/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-5"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2001/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>2000</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/quan-ly-thoi-gian-hieu-qua">Quản
+                                                    Lý Thời Gian Hiệu Quả</a>
+                                                <div class="text-small">Quản lý</div>
+                                            </td>
+
+                                            <td class="text-left">Cao Minh</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    30.00 ₫
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    4
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 6</div>
+                                            </td>
+
+                                            <td>128.7 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/2000/students"
+                                                    target="_blank" class="">4</a>
+                                            </td>
+
+                                            <td class="font-12">2021 06/30/| 05:22</td>
+
+                                            <td class="font-12">2023 07/31/| 19:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2000/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2000/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2000/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=923"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/2000/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-6"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/2000/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>1998</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/excel-tu-co-ban-den-nang-cao">Excel
+                                                    từ cơ bản đến nâng cao</a>
+                                                <div class="text-small">Quản lý</div>
+                                            </td>
+
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+
+                                            <td>
+                                                <span class="mt-0 mb-1">
+                                                    100.00 ₫
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    4
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 6</div>
+                                            </td>
+
+                                            <td>264 ₫</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/1998/students"
+                                                    target="_blank" class="">4</a>
+                                            </td>
+
+                                            <td class="font-12">2021 06/29/| 07:15</td>
+
+                                            <td class="font-12">2023 03/19/| 16:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1998/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1998/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1998/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=1015"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1998/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-7"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/1998/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>1996</td>
+                                            <td width="18%" class="text-left">
+                                                <a class="text-primary mt-0 mb-1 font-weight-bold"
+                                                    href="https://edulms.di4l.vn/lms/course/hoc-linux-trong-vong-5-ngay">Học
+                                                    Linux trong vòng 5 Ngày</a>
+                                                <div class="text-small">Phát triển Web</div>
+                                            </td>
+
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+
+                                            <td>
+                                                Miễn phí
+                                            </td>
+                                            <td>
+                                                <span class="text-primary mt-0 mb-1 font-weight-bold">
+                                                    5
+                                                </span>
+
+                                                <div class="text-small font-600-bold">Số lượng : 5</div>
+                                            </td>
+
+                                            <td>0</td>
+
+                                            <td class="font-12">
+                                                <a href="https://edulms.di4l.vn/lms/admin/webinars/1996/students"
+                                                    target="_blank" class="">5</a>
+                                            </td>
+
+                                            <td class="font-12">2021 06/29/| 01:16</td>
+
+                                            <td class="font-12">2021 07/9/| 15:30</td>
+
+                                            <td>
+                                                <div class="text-success font-600-bold">Đã xuất bản</div>
+                                                <div class="text-warning text-small">(Đang học)</div>
+                                            </td>
+                                            <td width="200" class="">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1996/sendNotification"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 ">
+                                                            <i class="fa fa-bell"></i>
+                                                            <span class="ml-2">Gửi thông báo</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1996/students"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-users"></i>
+                                                            <span class="ml-2">Học viên</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1996/statistics"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Học viên">
+                                                            <i class="fa fa-chart-pie"></i>
+                                                            <span class="ml-2">Thống kê</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/supports/create?user_id=1015"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1"
+                                                            title="Gửi tin nhắn đến giảng viên">
+                                                            <i class="fa fa-comment"></i>
+                                                            <span class="ml-2">Gửi tin nhắn</span>
+                                                        </a>
+
+                                                        <a href="https://edulms.di4l.vn/lms/admin/webinars/1996/edit"
+                                                            target="_blank"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Chỉnh sửa">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Chỉnh sửa</span>
+                                                        </a>
+
+                                                        <button
+                                                            class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-8"
+                                                            data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                            data-confirm-href="/lms/admin/webinars/1996/delete"
+                                                            data-confirm-text-yes="Có"
+                                                            data-confirm-text-cancel="Bỏ qua">
+                                                            <i class="fa fa-times"></i><span
+                                                                class="ml-2">admin/main.delete</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card-footer text-center">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
