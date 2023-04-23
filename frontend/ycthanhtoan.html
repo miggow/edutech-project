@@ -1,0 +1,162 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Yêu cầu thanh toán</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Xuất chi</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <section class="card">
+    <div class="card-body">
+    <form method="get" class="mb-0">
+    <input type="hidden" name="payout" value="requests">
+    <div class="row">
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Tìm kiếm</label>
+    <input type="text" class="form-control text-center" name="search" value="">
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label"> Ngày bắt đầu</label>
+    <div class="input-group">
+    <input type="date" id="fsdate" class="text-center form-control" name="from" value="" placeholder="Start Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Ngày kết thúc</label>
+    <div class="input-group">
+    <input type="date" id="lsdate" class="text-center form-control" name="to" value="" placeholder="End Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Vai trò</label>
+    <select name="role_id" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Tất cả các quyền</option>
+    <option value="1">Student role</option>
+    <option value="2">Admin role</option>
+    <option value="3">Organization role</option>
+    <option value="4">Instructor role</option>
+    <option value="6">Author</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Người dùng</label>
+    <select name="user_ids[]" multiple="" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Search teachers" data-select2-id="select2-data-1-mp9p" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-1ibu" style="width: 241.929px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-user_ids-n7-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-user_ids-n7-container" placeholder="Search teachers" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Ngân hàng</label>
+    <select name="account_type" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Tất cả ngân hàng</option>
+    {
+    <option value="TPBank">TPBank</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Bộ lọc tìm kiếm</label>
+    <select name="sort" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Filter Type</option>
+    <option value="amount_asc">Số tiền - Tăng dần</option>
+    <option value="amount_desc">Số tiền - Giảm dần</option>
+    <option value="created_at_asc">Ngày xuất chi gần nhất - Tăng dần</option>
+    <option value="created_at_desc">Ngày xuất chi gần nhất - Giảm dần</option>
+    </select>
+     </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label mb-4"> </label>
+    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </section>
+    <div class="row">
+    <div class="col-12 col-md-12">
+    <div class="card">
+    <div class="card-header">
+    <a href="https://edulms.di4l.vn/lms/admin/financial/payouts/excel?payout=requests" class="btn btn-primary">Xuất Excel</a>
+    </div>
+    <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th>Người dùng</th>
+    <th>Vai trò</th>
+    <th>Tổng tiền xuất chi</th>
+    <th>Ngân hàng</th>
+    <th>ID tài khoản</th>
+    <th>IBAN</th>
+    <th>Điện thoại</th>
+    <th width="180px">Ngày thanh toán gần đây nhất</th>
+    <th width="150px">Hành động</th>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <span class="d-block">Lê Hà Giang</span>
+    </td>
+    <td>Instructor role</td>
+    <td>80.00 ₫</td>
+    <td>Qatar National Bank</td>
+    <td>276393394748</td>
+    <td>QR21BARC20038014587495</td>
+    <td>+12025550143</td>
+    <td>2021/07/11-23:40</td>
+    <td width="150px">
+    <div class="">
+    <button class="btn-transparent text-primary trigger--fire-modal-1" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/financial/payouts/4/payout" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xuất chi">
+    <i class="fa fa-credit-card" aria-hidden="true"></i>
+    </button>
+    <button class="btn-transparent text-primary ml-2 trigger--fire-modal-2" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/financial/payouts/4/reject" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Từ chối">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </div>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="card">
+    <div class="card-body">
+    <div class="section-title ml-0 mt-0 mb-3"><h5>Gợi ý</h5></div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">Yêu cầu xuất chi</div>
+    <div class=" text-small font-600-bold">Nếu giảng viên hoặc Tổ chức yêu cầu một khoản thanh toán, nó sẽ được hiển thị trong danh sách này. Họ sẽ có thể yêu cầu xuất chi nếu số dư của họ nhiều hơn số tiền thanh toán tối thiểu.</div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">Chức năng xuất chi</div>
+    <div class=" text-small font-600-bold">Sau khi yêu cầu thanh toán được quản trị viên chấp thuận, số dư người dùng sẽ được đặt lại và quản trị viên phải chuyển tiền vào tài khoản người dùng theo cách thủ công.</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

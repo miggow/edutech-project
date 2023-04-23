@@ -1,0 +1,454 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Tài liệu</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Tài liệu</div>
+    </div>
+    </div>
+    <div class="section-filters">
+    <section class="card">
+    <div class="card-body">
+    <div class="mt-3">
+    <form action="https://edulms.di4l.vn/lms/admin/financial/documents" method="get" class="row mb-0">
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label"> Ngày bắt đầu</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="dateInputGroupPrepend">
+    <i class="fa fa-calendar-alt"></i>
+    </span>
+    </div>
+    <input type="text" name="from" autocomplete="off" class="form-control datefilter" aria-describedby="dateInputGroupPrepend" value="">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Ngày kết thúc</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="dateInputGroupPrepend">
+    <i class="fa fa-calendar-alt"></i>
+    </span>
+    </div>
+    <input type="text" name="to" autocomplete="off" class="form-control datefilter" aria-describedby="dateInputGroupPrepend" value="">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label d-block">Người dùng</label>
+    <select name="user[]" multiple="" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm người dùng hoặc giảng viên" data-select2-id="select2-data-1-w23d" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-ru2x" style="width: 332.562px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-user-ts-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-user-ts-container" placeholder="Tìm kiếm người dùng hoặc giảng viên" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label d-block">Khoá Học</label>
+    <select name="webinar" class="form-control search-webinar-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm khoá học" data-select2-id="select2-data-3-cloc" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-4-du0p" style="width: 241.929px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-webinar-o3-container"><span class="select2-selection__rendered" id="select2-webinar-o3-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Tìm kiếm khoá học</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label d-block">Loại</label>
+    <select name="type" class="form-control">
+    <option value="all">Tất cả</option>
+    <option value="addiction">Thêm</option>
+    <option value="deduction">Giảm</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label d-block">Account Type</label>
+    <select name="type_account" class="form-control">
+    <option value="all">Tất cả</option>
+    <option value="asset">Ví</option>
+    <option value="income">Thu nhập</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+    <button type="submit" class="btn btn-primary w-100">Xem kết quả</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </section>
+    </div>
+    <div class="section-body">
+    <div class="d-flex align-items-center justify-content-between">
+    </div>
+    <div class="row">
+    <div class="col-12 col-md-12">
+    <div class="card">
+    <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th class="text-left">Tiêu đề</th>
+    <th class="text-left">Người dùng</th>
+    <th class="text-center">Thuế</th>
+    <th class="text-center">Hệ thống</th>
+    <th>Tổng</th>
+    <th>Loại</th>
+    <th>Người tạo</th>
+    <th>Account Type</th>
+    <th>Ngày/Giờ</th>
+    <th>Hành động</th>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents" target="_blank" class="font-12">#86 Buổi học</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/995/edit" target="_blank" class="">Tú Nguyễn</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">99.00 ₫</span>
+    </td>
+    <td>
+    <span class="text-danger">Giảm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    asset
+    </td>
+    <td>2/April 2023 09:27</td>
+     <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/457/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents" target="_blank" class="font-12">#86 Buổi học</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/995/edit" target="_blank" class="">Tú Nguyễn</a>
+    </td>
+    <td class="text-center">
+    <span class="fas fa-check"></span>
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">9.00 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    asset
+    </td>
+    <td>2/April 2023 09:27</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/458/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents" target="_blank" class="font-12">#86 Buổi học</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/923/edit" target="_blank" class="">Cao Minh</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">72.00 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    income
+    </td>
+    <td>2/April 2023 09:27</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/459/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents" target="_blank" class="font-12">#86 Buổi học</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/923/edit" target="_blank" class="">Cao Minh</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    <span class="fas fa-check"></span>
+     </td>
+    <td>
+    <span class="text-success">18.00 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    income
+    </td>
+    <td>2/April 2023 09:27</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/460/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/khoa-hoc-ve-angularjs" target="_blank" class="font-12">#2001-Khoá học về AngularJS</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/1015/edit" target="_blank" class="">Nguyễn Hoàng Dũng</a>
+    </td>
+    <td class="text-center">
+    <span class="fas fa-check"></span>
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">1.60 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+     <td width="20%">
+    asset
+    </td>
+    <td>2/March 2023 04:12</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/454/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/khoa-hoc-ve-angularjs" target="_blank" class="font-12">#2001-Khoá học về AngularJS</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/3/edit" target="_blank" class="">Nguyễn Văn Trọng</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">12.80 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    income
+    </td>
+    <td>2/March 2023 04:12</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/455/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/khoa-hoc-ve-angularjs" target="_blank" class="font-12">#2001-Khoá học về AngularJS</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/3/edit" target="_blank" class="">Nguyễn Văn Trọng</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    <span class="fas fa-check"></span>
+    </td>
+    <td>
+    <span class="text-success">3.20 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    income
+    </td>
+    <td>2/March 2023 04:12</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/456/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/khoa-hoc-ve-angularjs" target="_blank" class="font-12">#2001-Khoá học về AngularJS</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/1015/edit" target="_blank" class="">Nguyễn Hoàng Dũng</a>
+     </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">17.60 ₫</span>
+    </td>
+    <td>
+    <span class="text-danger">Giảm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    asset
+    </td>
+    <td>2/March 2023 04:12</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/453/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/nang-luong-tuong-lai" target="_blank" class="font-12">#2004-Năng lượng tương lai</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/995/edit" target="_blank" class="">Tú Nguyễn</a>
+    </td>
+    <td class="text-center">
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">39.60 ₫</span>
+    </td>
+    <td>
+    <span class="text-danger">Giảm</span>
+    </td>
+    <td>
+     <span>Tự động</span>
+    </td>
+    <td width="20%">
+    asset
+    </td>
+    <td>25/February 2023 12:50</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/449/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="text-left">
+    <div class="text-left">
+    <span class="d-block font-weight-bold">Mua hàng</span>
+    <a href="https://edulms.di4l.vn/lms/course/nang-luong-tuong-lai" target="_blank" class="font-12">#2004-Năng lượng tương lai</a>
+    </div>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/admin/users/995/edit" target="_blank" class="">Tú Nguyễn</a>
+    </td>
+    <td class="text-center">
+    <span class="fas fa-check"></span>
+    </td>
+    <td class="text-center">
+    </td>
+    <td>
+    <span class="text-success">3.60 ₫</span>
+    </td>
+    <td>
+    <span class="text-success">Thêm</span>
+    </td>
+    <td>
+    <span>Tự động</span>
+    </td>
+    <td width="20%">
+    asset
+    </td>
+    <td>25/February 2023 12:50</td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/documents/450/print" class="btn-sm fa fa-print"></a>
+    </td>
+    </tr>
+    
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    <nav>
+    <ul class="pagination">
+    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+    <span class="page-link" aria-hidden="true">‹</span>
+    </li>
+    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=2">2</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=3">3</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=4">4</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=5">5</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=6">6</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=7">7</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=8">8</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=9">9</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=10">10</a></li>
+    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=20">20</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=21">21</a></li>
+    <li class="page-item">
+    <a class="page-link" href="https://edulms.di4l.vn/lms/admin/financial/documents?page=2" rel="next" aria-label="Next »">›</a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

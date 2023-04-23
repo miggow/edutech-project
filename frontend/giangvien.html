@@ -1,0 +1,636 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Giảng viên</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/instructors#">Giảng viên</a></div>
+    <div class="breadcrumb-item">Người dùng</div>
+    </div>
+    </div>
+    </section>
+    <div class="section-body">
+    <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-primary">
+    <i class="fas fa-users"></i>
+    </div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Tổng giảng viên</h4>
+    </div>
+    <div class="card-body">
+    7
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-success">
+    <i class="fas fa-briefcase"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Giảng viên trung tâm</h4>
+     </div>
+    <div class="card-body">
+    6
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-warning">
+    <i class="fas fa-info-circle"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Giảng viên không hoạt động</h4>
+    </div>
+    <div class="card-body">
+    0
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-danger">
+    <i class="fas fa-ban"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Giảng viên bị cấm</h4>
+    </div>
+    <div class="card-body">
+    0
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <section class="card">
+    <div class="card-body">
+    <form method="get" class="mb-0">
+    <div class="row">
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Tìm kiếm</label>
+    <input name="full_name" type="text" class="form-control" value="">
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label"> Ngày bắt đầu</label>
+    <div class="input-group">
+    <input type="date" id="from" class="text-center form-control" name="from" value="" placeholder="Start Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Ngày kết thúc</label>
+    <div class="input-group">
+    <input type="date" id="to" class="text-center form-control" name="to" value="" placeholder="End Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Bộ lọc tìm kiếm</label>
+    <select name="sort" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Kiểu lọc</option>
+    <option value="sales_classes_asc">Doanh số khóa học - Tăng dần</option>
+    <option value="sales_classes_desc">Doanh số khóa học - Giảm dần</option>
+    <option value="purchased_classes_asc">Khóa học đã mua - Tăng dần</option>
+    <option value="purchased_classes_desc">Khóa học đã mua - Giảm dần</option>
+    <option value="sales_appointments_asc">Bán buổi học - Tăng dần</option>
+    <option value="sales_appointments_desc"> Bán buổi học - Giảm dần</option>
+    <option value="purchased_appointments_asc">Buổi học đã mua - Tăng dần</option>
+     <option value="purchased_appointments_desc">Buổi học đã mua - Giảm dần</option>
+    <option value="register_asc">Ngày đăng ký - Tăng dần</option>
+    <option value="register_desc">Ngày đăng ký - Giảm dần</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Tổ chức</label>
+    <select name="organization_id" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Chọn tổ chức</option>
+    <option value="859">Công ty đào tạo giáo dục</option>
+    <option value="863">Công ty giáo dục mặt trời mộc</option>
+    <option value="864">Công ty thế hệ trẻ</option>
+    <option value="867">Công ty Hoa Nắng</option>
+    <option value="868">Công ty cổ phần giáo dục trực tuyến LPT</option>
+    <option value="4">Công ty LKT</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Nhóm người dùng</label>
+    <select name="group_id" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Chọn nhóm người dùng</option>
+    <option value="3">Special Students</option>
+    <option value="2">Vip Instructors</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Trạng thái</label>
+    <select name="status" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Tất cả trạng thái</option>
+    <option value="active_verified">Đang hoạt động (có huy hiệu xanh)</option>
+    <option value="active_notVerified">Đang hoạt động (không có Huy hiệu xanh)</option>
+    <option value="inactive">Không hoạt động</option>
+    <option value="ban">Bị cấm</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group mt-1">
+    <label class="input-label mb-4"> </label>
+    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </section>
+    </div>
+    <div class="card">
+    <div class="card-header">
+    <a href="https://edulms.di4l.vn/lms/admin/instructors/excel?" class="btn btn-primary">Xuất Excel</a>
+    <div class="h-10"></div>
+    </div>
+    <div class="card-body">
+    <div class="table-responsive text-center">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th>ID</th>
+    <th>Tên</th>
+    <th>Bán khoá học</th>
+    <th>Bán hội thảo</th>
+    <th>Khoá học đã mua</th>
+    <th>Hội thảo đã mua</th>
+    <th>Số dư tài khoản</th>
+    <th>Nhóm người dùng</th>
+    <th>Ngày đăng kí</th>
+    <th>Trạng thái</th>
+    <th width="120">Hành động</th>
+    </tr>
+    <tr>
+    <td>1016</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f17c8e72.png" alt="Nguyễn Minh Thanh">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Nguyễn Minh Thanh</div>
+    <div class="text-primary text-small font-600-bold">+12025250175</div>
+    <div class="text-primary text-small font-600-bold">thanh_nguyen@hotmail.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">4</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">1</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>4 ₫</td>
+    <td>
+    Vip Instructors
+    </td>
+    <td>27/06/2021 - 14:18</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-warning ">(không có Huy hiệu Xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/1016/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/1016/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-1" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/1016/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>1015</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f2fb8a6d.png" alt="Nguyễn Hoàng Dũng">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Nguyễn Hoàng Dũng</div>
+    <div class="text-primary text-small font-600-bold">+61491170156</div>
+    <div class="text-primary text-small font-600-bold">instructor@di4l.vn</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">17</div>
+    <div class="text-small font-600-bold">306.90 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">3</div>
+    <div class="text-small font-600-bold">1127.50 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">3</div>
+    <div class="text-small font-600-bold">35.20 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>1460 ₫</td>
+    <td>
+    </td>
+    <td>27/06/2021 - 14:06</td>
+     <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-success ">(có huy hiệu xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/1015/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/1015/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-2" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/1015/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>934</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f418be6b.png" alt="Lê Hà Giang">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Lê Hà Giang</div>
+    <div class="text-primary text-small font-600-bold">+12025550143</div>
+    <div class="text-primary text-small font-600-bold">giangle@gmail.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">1</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">1</div>
+    <div class="text-small font-600-bold">110.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>357.4 ₫</td>
+    <td>
+    </td>
+    <td>7/02/2021 - 01:47</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-warning ">(không có Huy hiệu Xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/934/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/934/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-3" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/934/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>929</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f5d834c8.png" alt="Huỳnh Thị Liên">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Huỳnh Thị Liên</div>
+    <div class="text-primary text-small font-600-bold">+12025550148</div>
+    <div class="text-primary text-small font-600-bold">lienhuynh.dev@yahoo.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">7</div>
+    <div class="text-small font-600-bold">160.60 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">4</div>
+    <div class="text-small font-600-bold">77.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>315.96 ₫</td>
+    <td>
+    </td>
+    <td>15/11/2020 - 13:03</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-warning ">(không có Huy hiệu Xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/929/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/929/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-4" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/929/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>870</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f7c09d61.png" alt="Trần Thanh Hà">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Trần Thanh Hà</div>
+    <div class="text-primary text-small font-600-bold">+12025550188</div>
+    <div class="text-primary text-small font-600-bold">hatran.torp@hotmail.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+     <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>0</td>
+    <td>
+    </td>
+    <td>4/11/2020 - 12:08</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-success ">(có huy hiệu xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/870/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/870/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-5" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/870/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>923</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+    <img src="./Giảng viên_files/617a4f9983fe5.png" alt="Cao Minh">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Cao Minh</div>
+    <div class="text-primary text-small font-600-bold">+61498970158</div>
+    <div class="text-primary text-small font-600-bold">minhcao@yahoo.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">1</div>
+    <div class="text-small font-600-bold">99.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>340.75 ₫</td>
+    <td>
+    </td>
+    <td>4/11/2020 - 12:08</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-success ">(có huy hiệu xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/923/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/923/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-6" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/923/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td class="text-left">
+    <div class="d-flex align-items-center">
+    <figure class="avatar mr-2">
+     <img src="./Giảng viên_files/617a4fad7845b.png" alt="Nguyễn Văn Trọng">
+    </figure>
+    <div class="media-body ml-1">
+    <div class="mt-0 mb-1 font-weight-bold">Nguyễn Văn Trọng</div>
+    <div class="text-primary text-small font-600-bold">+12085141324</div>
+    <div class="text-primary text-small font-600-bold">trongnguyen@gmail.com</div>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">2</div>
+    <div class="text-small font-600-bold">35.20 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">0</div>
+    <div class="text-small font-600-bold">0.00 ₫</div>
+    </div>
+    </td>
+    <td>27.2 ₫</td>
+    <td>
+    Vip Instructors
+    </td>
+    <td>19/08/2020 - 04:49</td>
+    <td>
+    <div class="media-body">
+    <div class="mt-0 mb-1 font-weight-bold text-success">Hoạt động</div>
+    <div class="text-small font-600-bold  text-warning ">(không có Huy hiệu Xanh)</div>
+    </div>
+    </td>
+    <td class="text-center mb-2" width="120">
+    <a href="https://edulms.di4l.vn/lms/admin/users/3/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đăng nhập">
+    <i class="fa fa-user-shield"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/users/3/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-7" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/users/3/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    </div>
+    </div>
+    <section class="card">
+    <div class="card-body">
+    <div class="section-title ml-0 mt-0 mb-3"><h4>Gợi ý</h4></div>
+    <div class="row">
+    <div class="col-md-4">
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">Thêm giảng viên mới</div>
+    <div class=" text-small font-600-bold mb-2">Để thêm giảng viên, hãy tạo người dùng mới với vai trò "Tổ chức" hoặc bạn có thể thay đổi vai trò người dùng trên trang chỉnh sửa người dùng hoặc phê duyệt yêu cầu trở thành giảng viên trên trang liên quan. </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">Giảng viên đang hoạt động</div>
+    <div class=" text-small font-600-bold mb-2">Email hoặc số điện thoại của giảng viên đã được phê duyệt sau quá trình đăng ký.</div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="media-body">
+    <div class="text-primary mt-0 mb-1 font-weight-bold">Huy hiệu xanh</div>
+    <div class="text-small font-600-bold mb-2">Bật tùy chọn này theo cách thủ công cho giảng viên được chọn. Một huy hiệu xanh sẽ được hiển thị trên hồ sơ của họ.</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

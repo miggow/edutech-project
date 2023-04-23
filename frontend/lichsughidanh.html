@@ -1,0 +1,444 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Lịch sử ghi danh</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Lịch sử ghi danh</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <section class="card">
+    <div class="card-body">
+    <form method="get" class="mb-0">
+    <div class="row">
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Tìm kiếm</label>
+    <input type="text" class="form-control" name="item_title" value="">
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label"> Ngày bắt đầu</label>
+    <div class="input-group">
+    <input type="date" id="fsdate" class="text-center form-control" name="from" value="" placeholder="Start Date">
+    </div>
+     </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Ngày kết thúc</label>
+    <div class="input-group">
+    <input type="date" id="lsdate" class="text-center form-control" name="to" value="" placeholder="End Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Trạng thái</label>
+    <select name="status" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Tất cả trạng thái</option>
+    <option value="success">Thành công</option>
+    <option value="refund">Hoàn trả</option>
+    <option value="blocked">Truy cập bị chặn</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Khoá Học</label>
+    <select name="webinar_ids[]" multiple="" class="form-control search-webinar-select2 select2-hidden-accessible" data-placeholder="Search classes" data-select2-id="select2-data-5-xi9v" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-6-u7d1" style="width: 241.929px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-webinar_ids-87-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-webinar_ids-87-container" placeholder="Search classes" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Giảng viên</label>
+    <select name="teacher_ids[]" multiple="" data-search-option="just_teacher_role" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Chọn giảng viên" data-select2-id="select2-data-1-ajhh" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-mq3d" style="width: 241.929px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-teacher_ids-iz-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-teacher_ids-iz-container" placeholder="Chọn giảng viên" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group">
+    <label class="input-label">Học viên</label>
+    <select name="student_ids[]" multiple="" data-search-option="just_student_role" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Chọn học viên" data-select2-id="select2-data-3-oc4c" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-4-383z" style="width: 241.929px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-student_ids-6w-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-student_ids-6w-container" placeholder="Chọn học viên" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="form-group mt-1">
+    <label class="input-label mb-4"> </label>
+    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </section>
+    <div class="row">
+    <div class="col-12 col-md-12">
+    <div class="card">
+    <div class="card-header">
+    <a href="https://edulms.di4l.vn/lms/admin/enrollments/export" class="btn btn-primary">Xuất Excel</a>
+    </div>
+    <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th>#</th>
+    <th class="text-left">Học viên</th>
+    <th class="text-left">Giảng viên</th>
+    <th class="text-left">Mục</th>
+    <th>Loại</th>
+    <th>Ngày</th>
+    <th>Trạng thái</th>
+    <th width="120">Hành động</th>
+    </tr>
+    <tr>
+    <td>205</td>
+    <td class="text-left">
+    Nguyễn Hoàng Dũng
+    <div class="text-primary text-small font-600-bold">ID : 1015</div>
+    </td>
+    <td class="text-left">
+    Nguyễn Văn Trọng
+    <div class="text-primary text-small font-600-bold">ID : 3</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Khoá học về AngularJS</div>
+    <div class="text-primary text-small font-600-bold">ID : 2001</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>2/March 2023 04:12</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/205/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-1" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/205/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>204</td>
+     <td class="text-left">
+    Tú Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 995</div>
+    </td>
+    <td class="text-left">
+    Huỳnh Thị Liên
+    <div class="text-primary text-small font-600-bold">ID : 929</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Năng lượng tương lai</div>
+    <div class="text-primary text-small font-600-bold">ID : 2004</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>25/February 2023 12:50</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/204/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-2" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/204/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>203</td>
+    <td class="text-left">
+    Tú Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 995</div>
+    </td>
+    <td class="text-left">
+    Công ty thế hệ trẻ
+    <div class="text-primary text-small font-600-bold">ID : 864</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời</div>
+     <div class="text-primary text-small font-600-bold">ID : 2003</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>23/February 2023 12:41</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/203/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-3" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/203/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>195</td>
+    <td class="text-left">
+    Minh Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 996</div>
+    </td>
+    <td class="text-left">
+    Công ty thế hệ trẻ
+    <div class="text-primary text-small font-600-bold">ID : 864</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời</div>
+    <div class="text-primary text-small font-600-bold">ID : 2003</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>25/June 2022 00:14</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/195/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-4" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/195/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>191</td>
+    <td class="text-left">
+    Tấn Trọng
+    <div class="text-primary text-small font-600-bold">ID : 930</div>
+    </td>
+    <td class="text-left">
+    Huỳnh Thị Liên
+    <div class="text-primary text-small font-600-bold">ID : 929</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Bí quyết tuyển chọn và đãi ngộ người tài</div>
+    <div class="text-primary text-small font-600-bold">ID : 2010</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>22/June 2022 01:51</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/191/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-5" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/191/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>190</td>
+    <td class="text-left">
+    Minh Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 996</div>
+    </td>
+    <td class="text-left">
+    Huỳnh Thị Liên
+    <div class="text-primary text-small font-600-bold">ID : 929</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Bí quyết tuyển chọn và đãi ngộ người tài</div>
+    <div class="text-primary text-small font-600-bold">ID : 2010</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>22/June 2022 01:25</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/190/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-6" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/190/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>189</td>
+    <td class="text-left">
+    Tú Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 995</div>
+    </td>
+    <td class="text-left">
+    Huỳnh Thị Liên
+    <div class="text-primary text-small font-600-bold">ID : 929</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Bí quyết tuyển chọn và đãi ngộ người tài</div>
+    <div class="text-primary text-small font-600-bold">ID : 2010</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>22/June 2022 00:37</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/189/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-7" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/189/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>185</td>
+    <td class="text-left">
+    Nguyễn Minh Thanh
+    <div class="text-primary text-small font-600-bold">ID : 1016</div>
+    </td>
+    <td class="text-left">
+    Nguyễn Hoàng Dũng
+    <div class="text-primary text-small font-600-bold">ID : 1015</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Khoá học đàn guitar cho người mới bắt đầu</div>
+    <div class="text-primary text-small font-600-bold">ID : 2008</div>
+    </div>
+    </td>
+     <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>3/March 2022 11:55</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/185/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-8" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/185/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>184</td>
+    <td class="text-left">
+    Alex Hoàng
+    <div class="text-primary text-small font-600-bold">ID : 1017</div>
+    </td>
+    <td class="text-left">
+    Nguyễn Hoàng Dũng
+    <div class="text-primary text-small font-600-bold">ID : 1015</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Khoá học đàn guitar cho người mới bắt đầu</div>
+    <div class="text-primary text-small font-600-bold">ID : 2008</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>1/March 2022 17:33</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+     <a href="https://edulms.di4l.vn/lms/admin/financial/sales/184/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-9" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/184/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>183</td>
+    <td class="text-left">
+    Minh Nguyễn
+    <div class="text-primary text-small font-600-bold">ID : 996</div>
+    </td>
+    <td class="text-left">
+    Nguyễn Hoàng Dũng
+    <div class="text-primary text-small font-600-bold">ID : 1015</div>
+    </td>
+    <td class="text-left">
+    <div class="media-body">
+    <div>Khoá học đàn guitar cho người mới bắt đầu</div>
+    <div class="text-primary text-small font-600-bold">ID : 2008</div>
+    </div>
+    </td>
+    <td>
+    <span class="font-weight-bold">
+    Mua
+    </span>
+    </td>
+    <td>1/March 2022 17:33</td>
+    <td>
+    <span class="text-success">Thành công</span>
+    </td>
+    <td>
+    <a href="https://edulms.di4l.vn/lms/admin/financial/sales/183/invoice" target="_blank" title="Hoá đơn"><i class="fa fa-print" aria-hidden="true"></i></a>
+    <button class="btn-transparent text-primary trigger--fire-modal-10" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/enrollments/183/block-access" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn truy cập">
+     <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    <nav>
+    <ul class="pagination">
+    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+    <span class="page-link" aria-hidden="true">‹</span>
+    </li>
+    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history?page=2">2</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history?page=3">3</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history?page=4">4</a></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history?page=5">5</a></li>
+    <li class="page-item">
+    <a class="page-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history?page=2" rel="next" aria-label="Next »">›</a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>

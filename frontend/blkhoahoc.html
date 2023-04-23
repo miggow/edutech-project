@@ -1,0 +1,573 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Nhận xét khoá học</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item">Bình luận</div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-primary">
+    <i class="fas fa-comment"></i>
+    </div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Tổng bình luận</h4>
+    </div>
+    <div class="card-body">
+    19
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-success">
+    <i class="fas fa-eye"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Bình luận đã đăng</h4>
+     </div>
+    <div class="card-body">
+    18
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-warning">
+    <i class="fas fa-hourglass-start"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Bình luận đang chờ xử lý</h4>
+    </div>
+    <div class="card-body">
+    1
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card card-statistic-1">
+    <div class="card-icon bg-danger">
+    <i class="fas fa-flag"></i></div>
+    <div class="card-wrap">
+    <div class="card-header">
+    <h4>Báo cáo bình luận</h4>
+    </div>
+    <div class="card-body">
+    2
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="section-body">
+    <section class="card">
+    <div class="card-body">
+    <form method="get" class="mb-0">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Tìm kiếm</label>
+    <input type="text" class="form-control" name="title" value="">
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Ngày</label>
+    <div class="input-group">
+    <input type="date" id="fsdate" class="text-center form-control" name="date" value="" placeholder="Date">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Trạng thái</label>
+    <select name="status" data-plugin-selecttwo="" class="form-control populate">
+    <option value="">Tất cả trạng thái</option>
+    <option value="pending">Đang chờ xử lý</option>
+    <option value="active">Đã xuất bản</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Khoá Học</label>
+    <select name="webinar_ids[]" multiple="" class="form-control search-webinar-select2 select2-hidden-accessible" data-placeholder="Tìm kiếm khoá học" data-select2-id="select2-data-3-022q" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-4-pcaj" style="width: 332.562px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-webinar_ids-r0-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-webinar_ids-r0-container" placeholder="Tìm kiếm khoá học" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group">
+    <label class="input-label">Người dùng</label>
+    <select name="user_ids[]" multiple="" class="form-control search-user-select2 select2-hidden-accessible" data-placeholder="Search users" data-select2-id="select2-data-1-s7s0" tabindex="-1" aria-hidden="true">
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-1x3s" style="width: 332.562px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-user_ids-bc-container"></ul><span class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-describedby="select2-user_ids-bc-container" placeholder="Search users" style="width: 100%;"></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="form-group mt-1">
+    <label class="input-label mb-4"> </label>
+    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </section>
+    <div class="row">
+    <div class="col-12 col-md-12">
+    <div class="card">
+    <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped font-14">
+    <tbody><tr>
+    <th>Bình luận</th>
+    <th>Ngày tạo</th>
+    <th class="text-left">Người dùng</th>
+    <th class="text-left">Khoá Học</th>
+    <th>Loại</th>
+    <th>Trạng thái</th>
+    <th width="150">Hành động</th>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Thank you!!">
+    </td>
+    <td>1/03/2023 | 23:46</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/1/profile" target="_blank" class="">Admin</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/lang-nghe-tich-cuc-ban-co-the-tro-thanh-mot-nguoi-lang-nghe-tuyet-voi" target="_blank">
+    Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời
+    </a>
+    </td>
+    <td>
+    <span>
+    Đã trả lời
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/67/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/63/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/67/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-1" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/67/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="We are very happy that you are satisfied with this course.">
+    </td>
+    <td>17/07/2021 | 04:18</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/863/profile" target="_blank" class="">Công ty giáo dục mặt trời mộc</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/lop-hoc-ve-suc-khoe-va-the-hinh" target="_blank">
+    Lớp học về Sức khỏe và Thể hình
+    </a>
+    </td>
+    <td>
+    <span>
+    Đã trả lời
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/65/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+     <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/52/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/65/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-2" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/65/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Great course that gives you the basic knowledge needed to become a product manager.">
+    </td>
+    <td>17/07/2021 | 04:12</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/1015/profile" target="_blank" class="">Nguyễn Hoàng Dũng</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/tro-thanh-mot-product-manager" target="_blank">
+    Trở thành một Product Manager
+    </a>
+    </td>
+    <td>
+    <span>
+    Bình luận chính
+    </span>
+    </td>
+    <td>
+    <span class="text-warning">
+    Đang chờ xử lý
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/64/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xuất bản">
+    <i class="fa fa-eye"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/64/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/64/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-3" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/64/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="As i already new a lot on this matter i was surprised that i actually find out that there are more ways to tweak your time management">
+    </td>
+    <td>17/07/2021 | 04:08</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/996/profile" target="_blank" class="">Minh Nguyễn</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/lang-nghe-tich-cuc-ban-co-the-tro-thanh-mot-nguoi-lang-nghe-tuyet-voi" target="_blank">
+    Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời
+    </a>
+    </td>
+    <td>
+    <span>
+    Bình luận chính
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/63/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/63/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/63/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-4" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/63/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Hi kate.&lt;br /&gt;
+    No, but it may change in the future. Thank you">
+    </td>
+    <td>14/07/2021 | 01:54</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/3/profile" target="_blank" class="">Nguyễn Văn Trọng</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/lang-nghe-tich-cuc-ban-co-the-tro-thanh-mot-nguoi-lang-nghe-tuyet-voi" target="_blank">
+    Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời
+    </a>
+    </td>
+    <td>
+    <span>
+    Đã trả lời
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/58/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/56/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/58/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-5" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/58/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="No, but it may change in the future. Thank you">
+    </td>
+    <td>14/07/2021 | 01:45</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/1016/profile" target="_blank" class="">Nguyễn Minh Thanh</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/tro-thanh-mot-product-manager" target="_blank">
+    Trở thành một Product Manager
+    </a>
+    </td>
+    <td>
+    <span>
+    Đã trả lời
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/57/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/55/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+     </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/57/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-6" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/57/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Hi.&lt;br /&gt;
+    Is it possible to start the class earlier?">
+    </td>
+    <td>14/07/2021 | 01:43</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/929/profile" target="_blank" class="">Huỳnh Thị Liên</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/lang-nghe-tich-cuc-ban-co-the-tro-thanh-mot-nguoi-lang-nghe-tuyet-voi" target="_blank">
+    Lắng nghe tích cực: Bạn có thể trở thành một người lắng nghe tuyệt vời
+    </a>
+    </td>
+    <td>
+    <span>
+    Bình luận chính
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/56/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/56/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/56/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-7" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/56/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Is it possible to update the course ?">
+    </td>
+    <td>14/07/2021 | 01:42</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/929/profile" target="_blank" class="">Huỳnh Thị Liên</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/tro-thanh-mot-product-manager" target="_blank">
+    Trở thành một Product Manager
+    </a>
+    </td>
+    <td>
+    <span>
+    Bình luận chính
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/55/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/55/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/55/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-8" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/55/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Please prove. The course files are complete and 90% of the students are satisfied.">
+    </td>
+    <td>14/07/2021 | 01:25</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/1016/profile" target="_blank" class="">Nguyễn Minh Thanh</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/tro-thanh-mot-product-manager" target="_blank">
+    Trở thành một Product Manager
+    </a>
+    </td>
+    <td>
+    <span>
+    Đã trả lời
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/54/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/53/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/54/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    <button class="btn-transparent text-primary trigger--fire-modal-9" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/54/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <button type="button" class="js-show-description btn btn-outline-primary">Xem</button>
+    <input type="hidden" value="Course files are not complete !!!">
+    </td>
+    <td>14/07/2021 | 01:21</td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/users/995/profile" target="_blank" class="">Tú Nguyễn</a>
+    </td>
+    <td class="text-left">
+    <a href="https://edulms.di4l.vn/lms/course/tro-thanh-mot-product-manager" target="_blank">
+    Trở thành một Product Manager
+    </a>
+    </td>
+    <td>
+    <span>
+    Bình luận chính
+    </span>
+    </td>
+    <td>
+    <span class="text-success">
+    Đã xuất bản
+    </span>
+    </td>
+    <td width="150px" class="text-center">
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/53/toggle" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Đang chờ xử lý">
+    <i class="fa fa-eye-slash"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/53/reply" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trả lời">
+    <i class="fa fa-reply"></i>
+    </a>
+    <a href="https://edulms.di4l.vn/lms/admin/comments/webinars/53/edit" class="btn-transparent text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa">
+    <i class="fa fa-edit"></i>
+    </a>
+    
+    <button class="btn-transparent text-primary trigger--fire-modal-10" data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?" data-confirm-href="/lms/admin/comments/webinars/53/delete" data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    </div>
+    <div class="card-footer text-center">
+    <nav>
+    <ul class="pagination">
+    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+    <span class="page-link" aria-hidden="true">‹</span>
+    </li>
+    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+    <li class="page-item"><a class="page-link" href="https://edulms.di4l.vn/lms/admin/comments/webinars?page=2">2</a></li>
+    <li class="page-item">
+    <a class="page-link" href="https://edulms.di4l.vn/lms/admin/comments/webinars?page=2" rel="next" aria-label="Next »">›</a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    <div class="modal fade" id="contactMessage" tabindex="-1" aria-labelledby="contactMessageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="contactMessageLabel">Tin nhắn</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

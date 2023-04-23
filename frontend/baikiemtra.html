@@ -1,0 +1,545 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+        <div class="section-header">
+            <h1>Bài kiểm tra</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều
+                        khiển</a>
+                </div>
+                <div class="breadcrumb-item">Bài kiểm tra</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-primary">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Tổng bài kiểm tra</h4>
+                        </div>
+                        <div class="card-body">
+                            7
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-warning">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Bài kiểm tra có hiệu lực</h4>
+                        </div>
+                        <div class="card-body">
+                            7
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-info">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Tổng học viên</h4>
+                        </div>
+                        <div class="card-body">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-success">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Tổng học viên đậu</h4>
+                        </div>
+                        <div class="card-body">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <section class="card">
+                <div class="card-body">
+                    <form action="https://edulms.di4l.vn/lms/admin/quizzes" method="get" class="row mb-0">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Tìm kiếm</label>
+                                <input type="text" class="form-control" name="title" value="">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label"> Ngày bắt đầu</label>
+                                <div class="input-group">
+                                    <input type="date" id="fsdate" class="text-center form-control"
+                                        name="from" value="" placeholder="Start Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Ngày kết thúc</label>
+                                <div class="input-group">
+                                    <input type="date" id="lsdate" class="text-center form-control"
+                                        name="to" value="" placeholder="End Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Bộ lọc tìm kiếm</label>
+                                <select name="sort" data-plugin-selecttwo="" class="form-control populate">
+                                    <option value="">Kiểu lọc</option>
+                                    <option value="have_certificate">Kiểm tra có Chứng chỉ</option>
+                                    <option value="students_count_asc">Học viên - Tăng dần</option>
+                                    <option value="students_count_desc">Học viên - Giảm dần</option>
+                                    <option value="passed_count_asc">Học viên đã đạt - Tăng dần</option>
+                                    <option value="passed_count_desc">Học viên đã đạt - Giảm dần</option>
+                                    <option value="grade_avg_asc">Điểm trung bình - Tăng dần</option>
+                                    <option value="grade_avg_desc">Điểm trung bình - Giảm dần</option>
+                                    <option value="created_at_asc">Ngày tạo - Tăng dần</option>
+                                    <option value="created_at_desc">Ngày tạo - Giảm dần</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Giảng viên</label>
+                                <select name="teacher_ids[]" multiple=""
+                                    data-search-option="just_teacher_role"
+                                    class="form-control search-user-select2 select2-hidden-accessible"
+                                    data-placeholder="Search teachers" data-select2-id="select2-data-1-03sg"
+                                    tabindex="-1" aria-hidden="true">
+                                </select><span class="select2 select2-container select2-container--default"
+                                    dir="ltr" data-select2-id="select2-data-2-sb7p"
+                                    style="width: 241.929px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple"
+                                            role="combobox" aria-haspopup="true" aria-expanded="false"
+                                            tabindex="-1" aria-disabled="false">
+                                            <ul class="select2-selection__rendered"
+                                                id="select2-teacher_ids-jr-container"></ul><span
+                                                class="select2-search select2-search--inline"><input
+                                                    class="select2-search__field" type="search" tabindex="0"
+                                                    autocorrect="off" autocapitalize="none"
+                                                    spellcheck="false" role="searchbox"
+                                                    aria-autocomplete="list" autocomplete="off"
+                                                    aria-describedby="select2-teacher_ids-jr-container"
+                                                    placeholder="Search teachers"
+                                                    style="width: 100%;"></span>
+                                        </span></span><span class="dropdown-wrapper"
+                                        aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Khoá Học</label>
+                                <select name="webinar_ids[]" multiple=""
+                                    class="form-control search-webinar-select2 select2-hidden-accessible"
+                                    data-placeholder="Search classes" data-select2-id="select2-data-3-q7v1"
+                                    tabindex="-1" aria-hidden="true">
+                                </select><span class="select2 select2-container select2-container--default"
+                                    dir="ltr" data-select2-id="select2-data-4-sxh6"
+                                    style="width: 241.929px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple"
+                                            role="combobox" aria-haspopup="true" aria-expanded="false"
+                                            tabindex="-1" aria-disabled="false">
+                                            <ul class="select2-selection__rendered"
+                                                id="select2-webinar_ids-kk-container"></ul><span
+                                                class="select2-search select2-search--inline"><input
+                                                    class="select2-search__field" type="search" tabindex="0"
+                                                    autocorrect="off" autocapitalize="none"
+                                                    spellcheck="false" role="searchbox"
+                                                    aria-autocomplete="list" autocomplete="off"
+                                                    aria-describedby="select2-webinar_ids-kk-container"
+                                                    placeholder="Search classes"
+                                                    style="width: 100%;"></span>
+                                        </span></span><span class="dropdown-wrapper"
+                                        aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="input-label">Trạng thái</label>
+                                <select name="statue" data-plugin-selecttwo=""
+                                    class="form-control populate">
+                                    <option value="">Tất cả trạng thái</option>
+                                    <option value="active">Hoạt động</option>
+                                    <option value="inactive">Không hoạt động</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                            <button type="submit" class="btn btn-primary w-100">Xem kết quả</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-right">
+                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/excel?"
+                                    class="btn btn-primary">Xuất Excel</a>
+                            </div>
+                            <div class="text-right">
+                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/create"
+                                    class="btn btn-primary ml-2">Câu trắc nghiệm mới</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped font-14">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-left">Tiêu đề</th>
+                                            <th class="text-left">Giảng viên</th>
+                                            <th class="text-center">Câu hỏi</th>
+                                            <th class="text-center">Học viên</th>
+                                            <th class="text-center">Điểm trung bình</th>
+                                            <th class="text-center">Chứng chỉ</th>
+                                            <th class="text-center">Trạng thái</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Entrance Quiz</span>
+                                                <small class="d-block text-left text-primary">Khoá học đàn
+                                                    guitar cho người mới bắt đầu</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+                                            <td class="text-center">
+                                                6
+                                            </td>
+                                            <td class="text-center">
+                                                <span>3</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 1)</span>
+                                            </td>
+                                            <td class="text-center">26.67 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/35/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/35/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-1"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/35/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Final Quiz</span>
+                                                <small class="d-block text-left text-primary">Học Linux
+                                                    trong vòng 5 Ngày</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>3</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 1)</span>
+                                            </td>
+                                            <td class="text-center">56.67 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/34/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/34/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-2"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/34/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Midterm Quiz</span>
+                                                <small class="d-block text-left text-primary">Excel từ cơ
+                                                    bản đến nâng cao</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Hoàng Dũng</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>2</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 1)</span>
+                                            </td>
+                                            <td class="text-center">60 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/33/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/33/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-3"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/33/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Midterm Quiz</span>
+                                                <small class="d-block text-left text-primary">Lắng nghe tích
+                                                    cực: Bạn có thể trở thành một người lắng nghe tuyệt
+                                                    vời</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Văn Trọng</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>0</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 0)</span>
+                                            </td>
+                                            <td class="text-center">0 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/32/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/32/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-4"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/32/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Placement Quiz</span>
+                                                <small class="d-block text-left text-primary">Khoá học về
+                                                    AngularJS</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Văn Trọng</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>0</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 0)</span>
+                                            </td>
+                                            <td class="text-center">0 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/31/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/31/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-5"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/31/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>First Quiz</span>
+                                                <small class="d-block text-left text-primary">How to Manage
+                                                    Your Virtual Team</small>
+                                            </td>
+                                            <td class="text-left">Huỳnh Thị Liên</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>1</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 0)</span>
+                                            </td>
+                                            <td class="text-center">40 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/30/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/30/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-6"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/30/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Elementary Quiz</span>
+                                                <small class="d-block text-left text-primary">Trở thành một
+                                                    Product Manager</small>
+                                            </td>
+                                            <td class="text-left">Nguyễn Minh Thanh</td>
+                                            <td class="text-center">
+                                                5
+                                            </td>
+                                            <td class="text-center">
+                                                <span>1</span>
+                                                <span class="d-block text-primary font-12">(Đậu: 1)</span>
+                                            </td>
+                                            <td class="text-center">80 </td>
+                                            <td class="text-center">
+                                                <a class="text-success fas fa-check"></a>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-success">Hoạt động</span>
+                                            </td>
+                                            <td>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/28/results"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" title=""
+                                                    data-original-title="Kết quả">
+                                                    <i class="fa fa-poll fa-1x"></i>
+                                                </a>
+                                                <a href="https://edulms.di4l.vn/lms/admin/quizzes/28/edit"
+                                                    class="btn-transparent btn-sm text-primary"
+                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Chỉnh sửa">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <button
+                                                    class="btn-transparent text-primary btn-sm trigger--fire-modal-7"
+                                                    data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
+                                                    data-confirm-href="/lms/admin/quizzes/28/delete"
+                                                    data-confirm-text-yes="Có"
+                                                    data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip"
+                                                    data-placement="top" title="" data-original-title="Xoá">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

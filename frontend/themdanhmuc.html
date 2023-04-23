@@ -1,0 +1,90 @@
+<div class="main-content" style="min-height: 623px;">
+    <section class="section">
+    <div class="section-header">
+    <h1>Thêm Danh Mục</h1>
+    <div class="section-header-breadcrumb">
+    <div class="breadcrumb-item active"><a href="https://edulms.di4l.vn/lms/admin/">Bảng điều khiển</a>
+    </div>
+    <div class="breadcrumb-item active">
+    <a href="https://edulms.di4l.vn/lms/admin/categories">Danh mục</a>
+    </div>
+    <div class="breadcrumb-item">Thêm</div>
+    </div>
+    </div>
+    <div class="section-body">
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+    <div class="card">
+    <div class="card-body">
+    <form action="https://edulms.di4l.vn/lms/admin/categories/store" method="Post">
+    <input type="hidden" name="_token" value="EAOYdY4mEbEd0IFFLkpho0ARpQRonycmk5g0n27r">
+    <div class="form-group">
+    <label class="input-label">Ngôn ngữ</label>
+    <select name="locale" class="form-control ">
+    <option value="VI" selected="">Vietnamese</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Tiêu đề</label>
+    <input type="text" name="title" class="form-control  " value="" placeholder="Tiêu đề">
+    </div>
+    <div class="form-group">
+    <label class="input-label">Biểu tượng</label>
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <button type="button" class="input-group-text admin-file-manager " data-input="icon" data-preview="holder">
+    <i class="fa fa-upload"></i>
+    </button>
+    </div>
+    <input type="text" name="icon" id="icon" value="" class="form-control ">
+    <div class="invalid-feedback"></div>
+    </div>
+    </div>
+    <div class="form-group">
+    <div class="custom-control custom-checkbox">
+    <input id="hasSubCategory" type="checkbox" name="has_sub" class="custom-control-input">
+    <label class="custom-control-label" for="hasSubCategory">Có danh mục con</label>
+    </div>
+    </div>
+    <div id="subCategories" class="ml-0  d-none">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+    <strong class="d-block">Thêm danh mục con</strong>
+    <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i> Add</button>
+    </div>
+    <ul class="draggable-lists list-group ui-sortable">
+    </ul>
+    </div>
+    <div class="text-right mt-4">
+    <button class="btn btn-primary">Lưu</button>
+    </div>
+    </form>
+    <li class="form-group main-row list-group d-none">
+    <div class="p-2 border rounded-sm">
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text cursor-pointer move-icon">
+    <i class="fa fa-arrows-alt"></i>
+    </div>
+    </div>
+    <input type="text" name="sub_categories[record][title]" class="form-control w-auto flex-grow-1" placeholder="Tiêu đề">
+    <div class="input-group-append">
+    <button type="button" class="btn remove-btn btn-danger"><i class="fa fa-times"></i></button>
+    </div>
+     </div>
+    <div class="input-group mt-1">
+    <div class="input-group-prepend">
+    <button type="button" class="input-group-text admin-file-manager " data-input="icon_record" data-preview="holder">
+    <i class="fa fa-upload"></i>
+    </button>
+    </div>
+    <input type="text" name="sub_categories[record][icon]" id="icon_record" class="form-control" placeholder="Biểu tượng">
+    </div>
+    </div>
+    </li>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>
