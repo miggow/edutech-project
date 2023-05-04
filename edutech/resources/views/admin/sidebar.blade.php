@@ -18,7 +18,7 @@
                 </a>
                 <ul class="dropdown-menu" style="display: none;">
                     <li class="">
-                        <a class="nav-link " href="https://edulms.di4l.vn/lms/admin/webinars?type=course">Khoá học</a>
+                        <a class="nav-link " href="{{ route('admin.home') }}">Khoá học</a>
                     </li>
 
                     <li class="">
@@ -166,17 +166,10 @@
 
                 <ul class="dropdown-menu">
                     <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/staffs">Nhân viên</a>
+                        <a class="nav-link" href="{{ route('admin.getUser') }}">Người dùng</a>
                     </li>
 
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/students">Học viên</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/instructors">Giảng
-                            viên</a>
-                    </li>
+                    
 
                     <!-- <li class="">
                         <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/organizations">Tổ

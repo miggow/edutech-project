@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>CodePen - Folded Paper Login Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/auth.css') }}">
 
 </head>
 

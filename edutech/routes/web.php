@@ -38,6 +38,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
             Route::get('/', 'AdminController@index')->name('admin.home');
             Route::get('/create','AdminController@createCourses')->name('admin.courses.create');
         });
+        Route::get('/user','AdminController@getUser')->name('admin.getUser');
     });
 });
 
