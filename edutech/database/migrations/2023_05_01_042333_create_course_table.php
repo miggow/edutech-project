@@ -13,15 +13,13 @@ class CreateCourseTable extends Migration
      */
     public function up()
     {
-        Schema::create('course', function (Blueprint $table) {
+        Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('slug');
             $table->string('image')->nullable();
             $table->string('bg')->nullable();
+            $table->string('video')->nullable();
             $table->text('description')->nullable();
-            $table->tinyInteger('featured')->defaut(0);
-            $table->string('video_link')->nullable();
             $table->bigInteger('user_id');
             $table->string('current_price')->nullable();
             $table->string('previous_price')->nullable();
@@ -36,6 +34,6 @@ class CreateCourseTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course');
+        Schema::dropIfExists('courses');
     }
 }
