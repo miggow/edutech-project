@@ -77,7 +77,13 @@
                 <div class="col-12 col-md-12">
                     <div class="card">
                         <div class="card-header">
-
+                            <div class="card-header">
+                                {{-- @if($authUser->can('admin_webinars_export_excel')) --}}
+                                    <div class="text-right">
+                                        <a href="{{ route('admin.user.create') }}" class="btn btn-primary">Thêm người dùng</a>
+                                    </div>
+                                {{-- @endif --}}
+                            </div>
                         </div>
 
                         <div class="card-body">

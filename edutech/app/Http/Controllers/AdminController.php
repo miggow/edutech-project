@@ -22,4 +22,7 @@ class AdminController extends Controller
         return view('admin.user.index', compact('users'));
 
     }
+    public function createUser(){
+        return view('admin.user.create');
+    }
 }

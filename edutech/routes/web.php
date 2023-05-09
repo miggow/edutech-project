@@ -20,12 +20,12 @@ Route::get('/', function () {
 })->name('welcome');
 
 //admin
-Route::group(['namespace' => 'Admin'], function () {
-    Route::get('/login', 'AuthController@login')->name('login');
-    Route::get('/register', 'AuthController@register')->name('register');
-    Route::post('/login', 'AuthController@doLogin')->name('admin.doLogin');
-    Route::post('/register', 'AuthController@doRegister')->name('admin.doRegister');
-});
+// Route::group(['namespace' => 'Admin'], function () {
+//     Route::get('/login', 'AuthController@login')->name('login');
+//     Route::get('/register', 'AuthController@register')->name('register');
+//     Route::post('/login', 'AuthController@doLogin')->name('admin.doLogin');
+//     Route::post('/register', 'AuthController@doRegister')->name('admin.doRegister');
+// });
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::prefix('admin')->group(function () {
         Route::group(['namespace' => 'Admin'], function () {
@@ -39,6 +39,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
             Route::get('/create','AdminController@createCourses')->name('admin.courses.create');
         });
         Route::get('/user','AdminController@getUser')->name('admin.getUser');
+        Route::get('/create','AdminController@createUser')->name('admin.user.create');
     });
 });
 
