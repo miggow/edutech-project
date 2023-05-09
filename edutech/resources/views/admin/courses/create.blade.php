@@ -31,7 +31,7 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <form method="post" action="/lms/admin/webinars/{{ !empty($webinar) ? $webinar->id.'/update' : 'store' }}" id="webinarForm" class="webinar-form">
+                            <form method="post" action="{{route('admin.course.store')}}"  enctype="multipart/form-data">
                                 {{ csrf_field() }}
                                 <section>
                                     <h2 class="section-title after-line">Thông tin cơ bản</h2>
@@ -86,7 +86,7 @@
                                                 </div>
                                                 @enderror
                                             </div> --}}
-{{--
+                                            {{--
                                             @if(!empty($webinar) and $webinar->creator->isOrganization())
                                                 <div class="form-group mt-15 ">
                                                     <label class="input-label d-block">{{ trans('lms/admin/main.organization') }}</label>
@@ -109,7 +109,7 @@
                                                         <option selected disabled>{{ trans('lms/public.select_a_teacher') }}</option>
                                                     @endif --}}
                                                 </select>
-{{--
+                                                {{--
                                                 @error('teacher_id')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
@@ -122,23 +122,10 @@
                                             <div class="form-group mt-15">
                                                 <label class="input-label">Ảnh thu nhỏ (thumbnail)</label>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button type="button" class="input-group-text admin-file-manager" data-input="thumbnail" data-preview="holder">
-                                                            <i class="fa fa-upload"></i>
-                                                        </button>
+                                                    <div class="form-group">
+                                                        <input type="file" name="thumbnail" class="form-control-file" id="thumbnail">
                                                     </div>
-                                                    {{-- {{ !empty($webinar) ? $webinar->thumbnail : old('thumbnail') }} --}}
-                                                    <input type="text" name="thumbnail" id="thumbnail" value="" class="form-control @error('thumbnail')  is-invalid @enderror"/>
-                                                    <div class="input-group-append">
-                                                        <button type="button" class="input-group-text admin-file-view" data-input="thumbnail">
-                                                            <i class="fa fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                    @error('thumbnail')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
+
                                                 </div>
                                             </div>
 
@@ -146,62 +133,22 @@
                                             <div class="form-group mt-15">
                                                 <label class="input-label">Ảnh bìa</label>
                                                 <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button type="button" class="input-group-text admin-file-manager" data-input="cover_image" data-preview="holder">
-                                                            <i class="fa fa-upload"></i>
-                                                        </button>
+                                                    <div class="form-group">
+                                                        <input type="file" name="cover_image" class="form-control-file" id="cover_image" value="{{$course->bg ?? ''}}">
                                                     </div>
-                                                    {{-- value="{{ !empty($webinar) ? $webinar->image_cover : old('image_cover') }}" --}}
-                                                    <input type="text" name="image_cover" id="cover_image"  class="form-control @error('image_cover')  is-invalid @enderror"/>
-                                                    <div class="input-group-append">
-                                                        <button type="button" class="input-group-text admin-file-view" data-input="cover_image">
-                                                            <i class="fa fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                    {{-- @error('image_cover')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror --}}
+
                                                 </div>
                                             </div>
 
-                                            {{-- <div class="form-group mt-25">
-                                                <label class="input-label">{{ trans('lms/public.demo_video') }} ({{ trans('lms/public.optional') }})</label>
 
-
-                                                <div class="">
-                                                    <label class="input-label font-12">{{ trans('lms/public.source') }}</label>
-                                                    <select name="video_demo_source"
-                                                            class="js-video-demo-source form-control"
-                                                    >
-                                                        @foreach(\App\Models\LMS\Webinar::$videoDemoSource as $source)
-                                                            <option value="{{ $source }}" @if(!empty($webinar) and $webinar->video_demo_source == $source) selected @endif>{{ trans('lms/update.file_source_'.$source) }}</option>
-                                                        @endforeach
-                                                    </select>
-                                                </div>
-                                            </div> --}}
 
                                             <div class="form-group mt-0">
                                                 <label class="input-label font-12">Video</label>
-                                                <div class="input-group js-video-demo-path-input">
-                                                    <div class="input-group-prepend">
-                                                        {{-- (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? '' : ''  --}}
-                                                        <button type="button" class="js-video-demo-path-upload input-group-text admin-file-manager" data-input="demo_video" data-preview="holder">
-                                                            <i class="fa fa-upload"></i>
-                                                        </button>
-                                                        {{-- (empty($webinar) or empty($webinar->video_demo_source) or $webinar->video_demo_source == 'upload') ? 'd-none' : ''  --}}
-                                                        {{-- <button type="button" class="js-video-demo-path-links rounded-left input-group-text input-group-text-rounded-left  -">
-                                                            <i class="fa fa-link"></i>
-                                                        </button> --}}
+                                                <div class="input-group">
+                                                    <div class="form-group">
+                                                        <input type="file" name="video" class="form-control-file" id="video" value="{{$course->video ?? ''}}">
                                                     </div>
-                                                    {{-- value="{{ !empty($webinar) ? $webinar->video_demo : old('video_demo') }}" --}}
-                                                    <input type="text" name="video_demo" id="demo_video"  class="form-control @error('video_demo')  is-invalid @enderror"/>
-                                                    @error('video_demo')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
+
                                                 </div>
                                             </div>
                                         </div>
@@ -274,7 +221,7 @@
                                                             </div>
 
                                                             {{-- {{ !empty($webinar) ? $webinar->duration : old('duration') }} --}}
-                                                            <input type="text" name="duration" value="" class="form-control @error('duration')  is-invalid @enderror"/>
+                                                            <input type="text" name="duration"  class="form-control @error('duration')  is-invalid @enderror"/>
                                                             {{-- @error('duration')
                                                             <div class="invalid-feedback">
                                                                 {{ $message }}
@@ -396,20 +343,13 @@
                                             <div class="form-group mt-15">
                                                 <label class="input-label">Danh mục</label>
 
-                                                <select name="teacher_id" data-search-option="just_teacher_role" class="form-control search-user-select2"
+                                                <select name="category" data-search-option="just_teacher_role" class="form-control search-user-select2"
                                                 data-placeholder="Chọn danh mục">                                                    {{-- {{ !empty($webinar) ? '' : 'selected' }} --}}
                                                     <option  disabled></option>
-                                                    {{-- @foreach($categories as $category)
-                                                        @if(!empty($category->subCategories) and count($category->subCategories))
-                                                            <optgroup label="{{  $category->title }}">
-                                                                @foreach($category->subCategories as $subCategory)
-                                                                    <option value="{{ $subCategory->id }}" {{ (!empty($webinar) and $webinar->category_id == $subCategory->id) ? 'selected' : '' }}>{{ $subCategory->title }}</option>
-                                                                @endforeach
-                                                            </optgroup>
-                                                        @else
-                                                            <option value="{{ $category->id }}" {{ (!empty($webinar) and $webinar->category_id == $category->id) ? 'selected' : '' }}>{{ $category->title }}</option>
-                                                        @endif
-                                                    @endforeach --}}
+
+                                                    @foreach($categories as $category)
+                                                            <option value="{{ $category->id }}" >{{ $category->name }}</option>
+                                                    @endforeach
                                                 </select>
 
                                                 {{-- @error('category_id')
@@ -733,9 +673,8 @@
 
                                 <input type="hidden" name="draft" value="no" id="forDraft"/>
 
-                                <div class="row">
-                                    <div class="col-12">
-                                        <button type="button" id="saveAndPublish" class="btn btn-success">Lưu và tiếp tục</button>
+
+                                        <button type="submit" class="btn btn-success">Lưu và tiếp tục</button>
 
                                         {{-- @if(!empty($webinar))
                                             <button type="button" id="saveReject" class="btn btn-warning">{{ trans('lms/public.reject') }}</button>
@@ -747,7 +686,6 @@
                                                     'btnClass' => 'btn btn-danger'
                                                     ])
                                         @endif --}}
-                                    </div>
                                 </div>
                             </form>
 

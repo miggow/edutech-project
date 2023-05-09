@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Folded Paper Login Form</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="{{ asset('assets/admin/css/auth.css') }}">
 
@@ -40,7 +40,7 @@
             </div>
             <div class="btn-group">
                 <button class="btn btn--primary">Sign in</button>
-                <a class="btn--text" href="{{route('register')}}">Bạn chưa có tài khoản?</a>
+                <a class="btn--text" href="{{route('admin.register')}}">Bạn chưa có tài khoản?</a>
             </div>
         </div>
     </form>
