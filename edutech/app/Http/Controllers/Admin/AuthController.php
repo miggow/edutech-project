@@ -25,9 +25,9 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt(["email" => $request->email, "password" => $request->password])) {
-            return redirect()->route('admin.home');
+            return redirect()->route('admin.course.index');
         }
-        return redirect()->route('login');
+        return redirect()->route('admin.login');
 
     }
     public function doRegister(Request $request)
@@ -39,10 +39,15 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
         if($user){
-            return redirect()->route('login');
+            return redirect()->route('admin.login');
         }
         else{
             return redirect()->back()->with('status', 'Email hoặc Password không chính xác');
         }
+    }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('admin.login');
     }
 }

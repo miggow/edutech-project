@@ -76,17 +76,15 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right">
 
-                 <a href="/lms/" class="dropdown-item has-icon">
-                    <i class="fas fa-globe"></i> {{ trans('lms/admin/main.show_website') }}
-                </a>
+
 
                 <a href="/lms/admin/users/{{ auth()->user()->id }}/edit" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> {{ trans('lms/admin/main.change_password') }}
+                    <i class="fas fa-cog"></i> Thay đỏi mật khẩu
                 </a>
 
                 <div class="dropdown-divider"></div>
-                <a href="/lms/admin/logout" class="dropdown-item has-icon text-danger">
-                    <i class="fas fa-sign-out-alt"></i> {{ trans('lms/admin/main.logout') }}
+                <a href="{{route('admin.logout')}}" class="dropdown-item has-icon text-danger">
+                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
                 </a>
             </div>
         </li>

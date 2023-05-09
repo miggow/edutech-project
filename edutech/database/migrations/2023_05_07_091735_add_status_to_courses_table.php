@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddCaregoryIdToCoursesTable extends Migration
+class AddStatusToCoursesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +14,7 @@ class AddCaregoryIdToCoursesTable extends Migration
     public function up()
     {
         Schema::table('courses', function (Blueprint $table) {
-            $table->unsignedBigInteger('category_id')->after('user_id')->nullable();
-            $table->foreign('category_id')
-                ->references('id')->on('categories')
-                ->onDelete('cascade');
+            $table->integer('status')->default(1);
         });
     }
 
@@ -29,7 +26,7 @@ class AddCaregoryIdToCoursesTable extends Migration
     public function down()
     {
         Schema::table('courses', function (Blueprint $table) {
-            $table->dropColumn('category_id');
+            $table->dropColumn('status');
         });
     }
 }
