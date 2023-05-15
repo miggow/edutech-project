@@ -50,4 +50,21 @@ class AuthController extends Controller
         Auth::logout();
         return redirect()->route('admin.login');
     }
+    public function doCreateUser(Request $request)
+    {
+        $user =User::create([
+            'name' => $request->full_name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'role' => $request->role_id,
+        ]);
+        if($user){
+            return redirect()->back();
+        }
+        else{
+            // return redirect()->back()->with('status', 'Email hoặc Password không chính xác');
+            dd('Email hoặc password không chính xác');
+        }
+    }
 }

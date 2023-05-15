@@ -78,10 +78,10 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="card-header">
-                                {{-- @if($authUser->can('admin_webinars_export_excel')) --}}
-                                    <div class="text-right">
-                                        <a href="{{ route('admin.user.create') }}" class="btn btn-primary">Thêm người dùng</a>
-                                    </div>
+                                {{-- @if ($authUser->can('admin_webinars_export_excel')) --}}
+                                <div class="text-right">
+                                    <a href="{{ route('admin.user.create') }}" class="btn btn-primary">Thêm người dùng</a>
+                                </div>
                                 {{-- @endif --}}
                             </div>
                         </div>
@@ -105,40 +105,53 @@
                                         <th width="120">Hành động</th>
                                     </tr>
                                     @foreach ($users as $user)
-                                        {{-- id --}}
-                                        <td>{{ $user->id }}</td>
-                                        {{-- Name --}}
-                                        <td class="text-left">{{ $user->name }}</td>
-                                        @if ($user->role == 0)
-                                            <td class="text-left">Học sinh</td>
-                                        @elseif($user->role == 1)
-                                            <td class="text-left">Giảng viên</td>
-                                        @elseif($user->role == 2)
-                                            <td class="text-left">Admin</td>
-                                        @endif
-                                        {{-- Email --}}
-                                        <td>{{ $user->email }}</td>
-                                        {{-- phone --}}
-                                        <td>{{ $user->phone }}</td>
-                                        @if ($user->status == 0)
-                                            <td>Ngưng hoạt động</td>
-                                        @else
-                                            <td>Hoạt động</td>
-                                        @endif
-                                        <td class="text-center mb-2" width="120">
-                                            <a href="#" class="btn-transparent  text-primary"
-                                                data-toggle="tooltip" data-placement="top" title=""
-                                                data-original-title="Chỉnh sửa">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            {{-- <button class="btn-transparent text-primary trigger--fire-modal-1"
-                                                data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
-                                                data-confirm-href="/lms/admin/users/1/delete" data-confirm-text-yes="Có"
-                                                data-confirm-text-cancel="Bỏ qua" data-toggle="tooltip" data-placement="top"
-                                                title="" data-original-title="Xoá">
-                                                <i class="fa fa-times" aria-hidden="true"></i>
-                                            </button> --}}
-                                        </td>
+                                        <tr>
+                                            {{-- id --}}
+                                            <td>{{ $user->id }}</td>
+                                            {{-- Name --}}
+                                            <td class="text-left">{{ $user->name }}</td>
+                                            @if ($user->role == 0)
+                                                <td class="text-left">Học sinh</td>
+                                            @elseif($user->role == 1)
+                                                <td class="text-left">Giảng viên</td>
+                                            @elseif($user->role == 2)
+                                                <td class="text-left">Admin</td>
+                                            @endif
+                                            {{-- Email --}}
+                                            <td>{{ $user->email }}</td>
+                                            {{-- phone --}}
+                                            <td>{{ $user->phone }}</td>
+                                            @if ($user->status == 0)
+                                                <td>Ngưng hoạt động</td>
+                                            @else
+                                                <td>Hoạt động</td>
+                                            @endif
+                                            <td class="text-center mb-2" width="120">
+                                                <div class="btn-group dropdown table-actions">
+                                                    <button type="button" class="btn-transparent dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-left webinars-lists-dropdown"
+                                                        x-placement="bottom-start"
+                                                        style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 14px, 0px);">
+
+                                                        <a href="{{ route('admin.user.edit.status', $user->id) }}"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Quản lý truy cập">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Quản lý truy cập</span>
+                                                        </a>
+                                                        <a href="{{ route('admin.user.edit', $user->id) }}"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Vai trò người dùng">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Vai trò người dùng</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
                                     @endforeach
                                     {{-- mẫu --}}
                                     {{-- <tr class="text-center">

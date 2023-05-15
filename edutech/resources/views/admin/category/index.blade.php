@@ -86,7 +86,6 @@
                                                             <i class="fa fa-edit"></i>
                                                             <span class="ml-2">Chỉnh sửa</span>
                                                         </a>
-
                                                         <button
                                                             class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-1"
                                                             data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"

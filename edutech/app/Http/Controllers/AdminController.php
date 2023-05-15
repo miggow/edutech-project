@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\User;
 use App\Models\Course;
 use App\Models\Category;
 use App\Models\Module;
@@ -187,5 +186,30 @@ class AdminController extends Controller
     }
     public function createUser(){
         return view('admin.user.create');
+    }
+
+    public function editUser($id)
+    {
+        $user =  User::find($id);
+        return view('admin.user.edit', compact('user'));
+    }
+    public function updateUser(Request $request, $id)
+    {
+        $user =  User::find($id);
+        $user->role = $request->role_id;
+        $user->save();
+        return redirect()->route('admin.getUser');
+    }
+    public function editStatusUser($id)
+    {
+        $user =  User::find($id);
+        return view('admin.user.edit-status', compact('user'));
+    }
+    public function updateStatusUser(Request $request, $id)
+    {
+        $user =  User::find($id);
+        $user->status = $request->status;
+        $user->save();
+        return redirect()->route('admin.getUser');
     }
 }

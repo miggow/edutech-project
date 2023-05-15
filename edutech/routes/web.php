@@ -34,24 +34,33 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
             Route::post('/login', 'AuthController@doLogin')->name('admin.doLogin');
             Route::post('/register', 'AuthController@doRegister')->name('admin.doRegister');
             Route::get('/logout', 'AuthController@logout')->name('admin.logout');
+            Route::post('/create-user', 'AuthController@doCreateUser')->name('admin.createUser');
         });
-        Route::prefix('courses')->group(function(){
+        Route::prefix('user')->group(function () {
+            Route::get('/', 'AdminController@getUser')->name('admin.getUser');
+            Route::get('/create', 'AdminController@createUser')->name('admin.user.create');
+            Route::get('/edit/{id}', 'AdminController@editUser')->name('admin.user.edit');
+            Route::get('/edit-status/{id}', 'AdminController@editStatusUser')->name('admin.user.edit.status');
+            Route::post('/update/{id}', 'AdminController@updateUser')->name('admin.user.update');
+            Route::post('/update-status/{id}', 'AdminController@updateStatusUser')->name('admin.user.update.status');
+        });
+        Route::prefix('courses')->group(function () {
             Route::get('/', 'AdminController@indexCourse')->name('admin.course.index');
-            Route::get('/create','AdminController@createCourses')->name('admin.course.create');
+            Route::get('/create', 'AdminController@createCourses')->name('admin.course.create');
             Route::get('/edit/{id}', 'AdminController@editCourse')->name('admin.course.edit');
             Route::post('/update/{id}', 'AdminController@updateCourse')->name('admin.course.update');
-            Route::post('/create','AdminController@storeCourse')->name('admin.course.store');
+            Route::post('/create', 'AdminController@storeCourse')->name('admin.course.store');
             Route::get('/delete-course/{id}', 'AdminController@deleteCourse')->name('admin.course.delete');
         });
-        Route::get('/user','AdminController@getUser')->name('admin.getUser');
-        Route::get('/create','AdminController@createUser')->name('admin.user.create');
-        Route::prefix('category')->group(function(){
-            Route::get('/','AdminController@indexCategory')->name('admin.category.index');
-            Route::get('/create','AdminController@createCategory')->name('admin.category.create');
-            Route::post('create','AdminController@storeCategory')->name('admin.category.store');
-            Route::get('/edit/{id}','AdminController@editCategory')->name('admin.category.edit');
+
+        
+        Route::prefix('category')->group(function () {
+            Route::get('/', 'AdminController@indexCategory')->name('admin.category.index');
+            Route::get('/create', 'AdminController@createCategory')->name('admin.category.create');
+            Route::post('create', 'AdminController@storeCategory')->name('admin.category.store');
+            Route::get('/edit/{id}', 'AdminController@editCategory')->name('admin.category.edit');
             Route::post('/edit/{id}', 'AdminController@updateCategory')->name('admin.category.update');
-            Route::get('/delete-category/{id}','AdminController@deleteCategory')->name('admin.category.delete');
+            Route::get('/delete-category/{id}', 'AdminController@deleteCategory')->name('admin.category.delete');
         });
         //module
         Route::get('/course/{id?}/modules', 'AdminController@indexModule')->name('admin.module.index');
@@ -69,4 +78,3 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/lesson/delete/{id}', 'AdminController@deleteLesson')->name('admin.lesson.delete');
     });
 });
-

@@ -18,7 +18,7 @@
                 </a>
                 <ul class="dropdown-menu" style="display: none;">
                     <li class="">
-                        <a class="nav-link " href="{{ route('admin.home') }}">Khoá học</a>
+                        <a class="nav-link " href="{{ route('admin.course.index') }}">Khoá học</a>
                     </li>
 
                     {{-- <li class="">
