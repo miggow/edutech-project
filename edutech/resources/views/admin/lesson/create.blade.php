@@ -31,9 +31,9 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <form method="post" action="{{ route('admin.module.store') }}">
+                            <form method="post" action="{{ route('admin.lesson.store') }}">
                                 {{ csrf_field() }}
-                                <input type="hidden" name="course_id" value="{{ $course->id }}" />
+                                <input type="hidden" name="module_id" value="{{ $module->id }}" />
                                 <section>
                                     <h2 class="section-title after-line">Thông tin cơ bản</h2>
 
@@ -52,6 +52,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="row">
                                         <div class="col-12 col-md-6">
                                             <div class="form-group">
@@ -68,6 +69,46 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group mb-1">
+                                        <label for="">Video **</label>
+                                        {{-- <div class="d-flex flex-row">
+                                            <div>
+                                                <input type="radio" id="video_link" name="video" value="2">
+                                                <p class="d-inline-block">Enter Video Link</p>
+                                            </div>
+                                        </div> --}}
+
+                                        <div>
+                                            {{-- <div id="upload_btn_id" class="d-none">
+                                                <div class="form-group p-0">
+                                                    <div class="video-preview" id="videoPreview2">
+                                                        <video width="320" height="240" controls id="video_src">
+                                                            <source src="" type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                                    <br>
+
+
+                                                    <input id="fileInput2" type="hidden" name="video_file">
+                                                    <button id="chooseVideo2" class="choose-video btn btn-primary" type="button"
+                                                        data-multiple="false" data-video="true" data-toggle="modal"
+                                                        data-target="#lfmModal2">Choose Video</button>
+
+
+                                                    <p class="text-warning mb-0">MP4 video is allowed</p>
+                                                    <p class="em text-danger mb-0" id="errvideo_file"></p>
+
+                                                </div>
+                                            </div> --}}
+
+                                            <div id="video_link_id" >
+                                                <input class="form-control" type="text" name="video_link"
+                                                    placeholder="Nhập vào đường dẫn video" value="">
+                                            </div>
+                                        </div>
+                                        <p id="errvideo" class="mb-0 text-danger em"></p>
+                                    </div>
+                                    <br>
 
                                 </section>
                                 <button type="submit" class="btn btn-success">Lưu và tiếp tục</button>
@@ -95,4 +136,33 @@
 
     <script src="/assets/default/js/admin/quiz.min.js"></script>
     <script src="/assets/admin/js/webinar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // on page load show default input field for video upload
+            let btnName = $('input:radio[name=video]');
+
+            if (btnName.is(':checked') === false) {
+                btnName.filter('[value=1]').prop('checked', true);
+
+                let radioValue = $("input[name='video']:checked").val();
+
+                if (radioValue == 1) {
+                    $('#upload_btn_id').removeClass('d-none');
+                }
+            }
+
+            // show different video input field by toggling radio button
+            $("input[type='radio']").click(function() {
+                let radioValue = $("input[name='video']:checked").val();
+
+                if (radioValue == 1) {
+                    $('#upload_btn_id').removeClass('d-none');
+                    $('#video_link_id').addClass('d-none');
+                } else {
+                    $('#video_link_id').removeClass('d-none');
+                    $('#upload_btn_id').addClass('d-none');
+                }
+            });
+        });
+    </script>
 @endpush

@@ -24,4 +24,8 @@ class Course extends Model
     {
         return $this->belongsTo(Category::class);
     }
+    public function module()
+    {
+        return $this->belongsTo(Module::class);
+    }
 }

@@ -1,7 +1,7 @@
 <div class="main-sidebar" tabindex="1" style="overflow: hidden; outline: none;">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="#">
+            <a href="{{route('home')}}">
                 Edutech - Project
             </a>
         </div>
