@@ -51,7 +51,12 @@
                                                             <i class="fa fa-edit"></i>
                                                             <span class="ml-2">Chỉnh sửa</span>
                                                         </a>
-
+                                                        <a href="{{route('admin.lesson.index', $module->id)}}"
+                                                            class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
+                                                            title="Lesson">
+                                                            <i class="fa fa-edit"></i>
+                                                            <span class="ml-2">Bài học</span>
+                                                        </a>
                                                         <button
                                                             class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-1"
                                                             data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
