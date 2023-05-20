@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\Category;
 use App\Models\Module;
+use Str;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
@@ -28,18 +29,24 @@ class AdminController extends Controller
         $course = new Course();
         $course->title = $request->title;
         if ($request->hasFile('thumbnail') && $request->file('thumbnail')->isValid()) {
-            $path = $request->file('thumbnail')->store('public/file');
-            $url = Storage::url($path);
+            $file = $request->file('thumbnail');
+            $name = Str::random(10);
+            $url = Storage::putFileAs('images', $file, $name . '.' . $file->extension());
+
             $course->image = $url;
         }
         if ($request->hasFile('cover_image') && $request->file('cover_image')->isValid()) {
-            $path = $request->file('cover_image')->store('public/file');
-            $url = Storage::url($path);
+            $file = $request->file('cover_image');
+            $name = Str::random(10);
+            $url = Storage::putFileAs('images', $file, $name . '.' . $file->extension());
+
             $course->bg = $url;
         }
         if ($request->hasFile('video') && $request->file('video')->isValid()) {
-            $path = $request->file('video')->store('public/file');
-            $url = Storage::url($path);
+            $file = $request->file('video');
+            $name = Str::random(10);
+            $url = Storage::putFileAs('videos', $file, $name . '.' . $file->extension());
+
             $course->video = $url;
         }
         $course->description = $request->description;
@@ -69,19 +76,25 @@ class AdminController extends Controller
         $course = Course::find($id);
         $course->title = $request->title;
         if ($request->hasFile('thumbnail') && $request->file('thumbnail')->isValid()) {
-            $path = $request->file('thumbnail')->store('public/file');
-            $url = Storage::url($path);
-            $course->image = $url;
+        $file = $request->file('thumbnail');
+        $name = Str::random(10);
+        $url = Storage::putFileAs('images', $file, $name . '.' . $file->extension());
+
+        $course->image = $url;
         }
         if ($request->hasFile('cover_image') && $request->file('cover_image')->isValid()) {
-            $path = $request->file('cover_image')->store('public/file');
-            $url = Storage::url($path);
-            $course->bg = $url;
+        $file = $request->file('cover_image');
+        $name = Str::random(10);
+        $url = Storage::putFileAs('images', $file, $name . '.' . $file->extension());
+
+        $course->bg = $url;
         }
         if ($request->hasFile('video') && $request->file('video')->isValid()) {
-            $path = $request->file('video')->store('public/file');
-            $url = Storage::url($path);
-            $course->video = $url;
+        $file = $request->file('video');
+        $name = Str::random(10);
+        $url = Storage::putFileAs('videos', $file, $name . '.' . $file->extension());
+
+        $course->video = $url;
         }
         $course->description = $request->description;
         $course->user_id = auth()->user()->id;

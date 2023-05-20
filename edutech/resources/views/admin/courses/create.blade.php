@@ -722,7 +722,19 @@
     <script src="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
     <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
     <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
-
+    <script src="/ckeditor/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( 'textarea[name="description"]' ), {
+                toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|', 'blockQuote' ]
+            } )
+            .then( editor => {
+                console.log( editor );
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
     <script src="/assets/default/js/admin/quiz.min.js"></script>
     <script src="/assets/admin/js/webinar.min.js"></script>
 @endpush

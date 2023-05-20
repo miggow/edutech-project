@@ -2,62 +2,46 @@
 <html lang="en">
 
 <head>
-    <!-- General CSS File -->
-    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/simplebar/simplebar.css">
-    <link rel="stylesheet" href="/assets/default/css/app.css">
+    <meta charset="utf-8">
+    <title>Edutech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    @stack('styles_top')
-    @stack('scripts_top')
 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    {{-- <link href="{{asset('/template/css/all.min.css')}}" rel="stylesheet"> --}}
+    <link rel="stylesheet" href="{{asset('assets/vendors/fontawesome/css/all.min.css')}}"/>
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('/template/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{asset('/template/css/style.min.css')}}" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
-        <div class="main-wrapper">
-            @include('frontend.top_nav')
-            @include('frontend.navbar')
-
-
-            <div class="main-content">
-
-                @yield('content')
-
-            </div>
-        </div>
-
-        <div class="modal fade" id="fileViewModal" tabindex="-1" aria-labelledby="fileViewModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body">
-                        <img src="" class="w-100" height="350px" alt="">
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Navbar Start -->
+    @include('frontend.navbar')
+    <!-- Navbar End -->
+    <div class=" jumbotron-fluid position-relative overlay-bottom" style="margin-top: 90px;">
 
     </div>
-    <!-- Template JS File -->
-    <script src="/assets/default/js/app.js"></script>
-    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-    <script src="/assets/default/vendors/moment.min.js"></script>
-    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="/assets/default/vendors/toast/jquery.toast.min.js"></script>
-    <script type="text/javascript" src="/assets/default/vendors/simplebar/simplebar.min.js"></script>
-    @stack('styles_bottom')
-    @stack('scripts_bottom')
-    <script src="/assets/default/js/parts/main.min.js"></script>
+    @yield('content')
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="{{asset('/template/js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{asset('/template/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('/template/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('/template/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('/template/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset('/template/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{asset('/template/js/main.js')}}"></script>
 </body>
 
 </html>
