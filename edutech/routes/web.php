@@ -89,5 +89,17 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/settings/{id}', 'SettingController@index')->name('settings');
         Route::post('settings/{id}','SettingController@update')->name('settings.update');
         Route::post('settings-social/{id}','SettingController@UpdateSocial')->name('settings.update_social');
+        //Lớp học
+        Route::prefix('class')->group(function(){
+            //Route lớp học
+            Route::get('/', 'ClassController@index')->name('class.index');
+            Route::get('/create-class', 'ClassController@create')->name('class.create');
+            Route::get('/edit-class', 'ClassController@edit')->name('class.edit');
+            Route::get('/class/{id}', 'ClassController@show')->name('class.show');
+
+            Route::get('/class/{id}/chat', 'ClassController@chat')->name('class.chat');
+        });
+
+
     });
 });
