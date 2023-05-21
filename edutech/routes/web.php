@@ -86,5 +86,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('/lesson/update/{id?}', 'LessonController@updateLesson')->name('admin.lesson.update');
         Route::get('/lesson/delete/{id}', 'LessonController@deleteLesson')->name('admin.lesson.delete');
         });
+        Route::get('/settings/{id}', 'SettingController@index')->name('settings');
+        Route::post('settings/{id}','SettingController@update')->name('settings.update');
+        Route::post('settings-social/{id}','SettingController@UpdateSocial')->name('settings.update_social');
     });
 });

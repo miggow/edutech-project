@@ -1,499 +1,69 @@
-<div class="main-sidebar" tabindex="1" style="overflow: hidden; outline: none;">
-    <aside id="sidebar-wrapper">
-        <div class="sidebar-brand">
-            <a href="{{route('home')}}">
-                Edutech - Project
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+    <div class="app-brand demo">
+        <a href="{{ url('/') }}" class="app-brand-link">
+
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Edutech</span>
+        </a>
+
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+        </a>
+    </div>
+
+    <div class="menu-inner-shadow"></div>
+
+    <ul class="menu-inner py-1">
+        <!-- Dashboard -->
+        {{-- <li class="menu-item active">
+            <a href="index.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Dashboard</div>
             </a>
-        </div>
-
-        <ul class="sidebar-menu">
-
-
-            <li class="menu-header">Học vấn</li>
-
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Khoá học</span>
-                </a>
-                <ul class="dropdown-menu" style="display: none;">
-                    <li class="">
-                        <a class="nav-link " href="{{ route('admin.course.index') }}">Khoá học</a>
-                    </li>
-
-                    {{-- <li class="">
-                        <a class="nav-link " href="https://edulms.di4l.vn/lms/admin/webinars?type=webinar">Lớp học trực
-                            tiếp</a>
-                    </li> --}}
-
-                    {{-- <li class="">
-                        <a class="nav-link " href="https://edulms.di4l.vn/lms/admin/webinars?type=text_lesson">Khoá học
-                            văn
-                            bản</a>
-                    </li> --}}
-
-{{--
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/agora_history">Lịch sử
-                            khoá học</a>
-                    </li> --}}
-
-                </ul>
-            </li>
-
-            {{-- <li class="">
-                <a class="nav-link " href="https://edulms.di4l.vn/lms/admin/quizzes">
-                    <i class="fas fa-file"></i>
-                    <span>Bài kiểm tra</span>
-                </a>
-            </li> --}}
-
-
-{{--
-            <li class="">
-                <a href="https://edulms.di4l.vn/lms/admin/assignments" class="nav-link">
-                    <i class="fas fa-pen"></i>
-                    <span>Bài Tập</span>
-                </a>
-            </li> --}}
-
-
-            {{-- <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-clipboard-check"></i>
-                    <span>Thông báo khóa học</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/course-noticeboards">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/course-noticeboards/send">Thêm</a>
-                    </li>
-                </ul>
-            </li> --}}
-
-            {{-- <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-user-plus"></i>
-                    <span>Ghi danh</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/enrollments/history">Lịch
-                            sử</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link"
-                            href="https://edulms.di4l.vn/lms/admin/enrollments/add-student-to-class">Thêm
-                            học viên vào khoá học</a>
-                    </li>
-                </ul>
-            </li> --}}
-            <li class="">
-                <a class="nav-link" href="{{route('admin.category.index')}}">
-                    <i class="fas fa-th"></i> <span>Danh mục</span>
-                </a>
-            </li>
-
-
-
-
-            {{-- <li class="">
-                <a href="https://edulms.di4l.vn/lms/admin/reviews" class="nav-link  beep beep-sidebar ">
-                    <i class="fas fa-star"></i>
-                    <span>Nhận xét</span>
-                </a>
-            </li> --}}
-
-
-
-
-
-
-            <li class="menu-header">Người dùng</li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-users"></i>
-                    <span>Người dùng</span>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="{{ route('admin.getUser') }}">Người dùng</a>
-                    </li>
-
-
-
-                    <!-- <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/organizations">Tổ
-                            chức</a>
-                    </li> -->
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/users/create">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="">
-                <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/users/not-access-to-content">
-                    <i class="fas fa-user-lock"></i> <span>Quản lý truy cập</span>
-                </a>
-            </li>
-
-            <li class="nav-item ">
-                <a href="https://edulms.di4l.vn/lms/admin/users/delete-account-requests" class="nav-link">
-                    <i class="fa fa-user-times"></i>
-                    <span>Xóa tài khoản theo yêu cầu</span>
-                </a>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-user-circle"></i> <span>Vai trò người dùng</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link active" href="https://edulms.di4l.vn/lms/admin/roles">Danh
-                            sách</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/roles/create">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-
-
-            {{-- <li class="">
-                <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/users/badges">
-                    <i class="fas fa-trophy"></i>
-                    <span>Huy hiệu</span>
-                </a>
-            </li>
-
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-list-alt"></i>
-                    <span>Yêu cầu giáo viên hướng dẫn</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link"
-                            href="https://edulms.di4l.vn/lms/admin/users/become-instructors/instructors">
-                            <span>Giảng viên</span>
-                        </a>
-                    </li>
-
-
-                </ul>
-            </li>
-
-
-
-            <li class="menu-header">CRM</li>
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"><i
-                        class="fas fa-comments"></i> <span>Bình
-                        luận</span></a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link  beep beep-sidebar "
-                            href="https://edulms.di4l.vn/lms/admin/comments/webinars">Bình luận khoá
-                            học</a>
-                    </li>
-
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"><i
-                        class="fas fa-info-circle"></i> <span>Báo
-                        cáo</span></a>
-
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/reports/webinars">Khoá
-                            học</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/comments/webinars/reports">Bình
-                            luận
-                            khoá
-                            học</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/reports/reasons">Báo
-                            cáo
-                            lý do</a>
-                    </li>
-
-
-                </ul>
-            </li>
-
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"><i
-                        class="fas fa-sticky-note"></i> <span>Bảng thông
-                        báo</span></a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/noticeboards">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/noticeboards/send">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-bell"></i>
-                    <span>Thông Báo</span>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/notifications">Lịch
-                            sử</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/notifications/posted">đã
-                            đăng</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/notifications/send">Thêm</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/notifications/templates">Mẫu</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/notifications/templates/create">Mẫu
-                            mới</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="menu-header">Nội dung</li>
-
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-address-card"></i>
-                    <span>Phản hồi khách hàng</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/testimonials">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/testimonials/create">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="">
-                <a href="https://edulms.di4l.vn/lms/admin/tags" class="nav-link">
-                    <i class="fas fa-tags"></i>
-                    <span>Thẻ</span>
-                </a>
-            </li>
-
-
-            <li class="menu-header">Tài chính</li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <span>Dư nợ</span>
-                </a>
-                <ul class="dropdown-menu">
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/financial/documents">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/financial/documents/new">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"><i
-                        class="fas fa-credit-card"></i> <span>Xuất
-                        chi</span></a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a href="https://edulms.di4l.vn/lms/admin/financial/payouts?payout=requests"
-                            class="nav-link  beep beep-sidebar ">
-                            <span>Yêu cầu</span>
-                        </a>
-                    </li>
-
-                    <li class="">
-                        <a href="https://edulms.di4l.vn/lms/admin/financial/payouts?payout=history" class="nav-link">
-                            <span>Lịch sử</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"><i
-                        class="fas fa-university"></i> <span>Thanh toán ngoại
-                        tuyến</span></a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a href="https://edulms.di4l.vn/lms/admin/financial/offline_payments?page_type=requests"
-                            class="nav-link  beep beep-sidebar ">
-                            <span>Yêu cầu</span>
-                        </a>
-                    </li>
-
-                    <li class="">
-                        <a href="https://edulms.di4l.vn/lms/admin/financial/offline_payments?page_type=history"
-                            class="nav-link">
-                            <span>Lịch sử</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fa fa-gift"></i>
-                    <span>Điểm thưởng</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/rewards">Lịch sử</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/rewards/items">Điều
-                            kiện</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/rewards/settings">Cài
-                            đặt</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="menu-header">Marketing</li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-percent"></i>
-                    <span>Phiếu giảm giá</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/financial/discounts">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/financial/discounts/new">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fa fa-fire"></i>
-                    <span>Giảm giá khóa học</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/financial/special_offers">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link"
-                            href="https://edulms.di4l.vn/lms/admin/financial/special_offers/new">Thêm</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="https://edulms.di4l.vn/lms/admin/webinars?type=course#" class="nav-link has-dropdown"
-                    data-toggle="dropdown">
-                    <i class="fas fa-star"></i>
-                    <span>Khoá học nổi bật</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/webinars/features">Danh
-                            sách</a>
-                    </li>
-
-                    <li class="">
-                        <a class="nav-link" href="https://edulms.di4l.vn/lms/admin/webinars/features/create">Thêm</a>
-                    </li>
-                </ul>
-            </li> --}}
-
-
-            <li class="menu-header">Cài đặt</li>
-
-
-            <li class="nav-item ">
-                <a href="https://edulms.di4l.vn/lms/admin/settings" class="nav-link">
-                    <i class="fas fa-cogs"></i>
-                    <span>Cài đặt</span>
-                </a>
-            </li>
-
-
-            <li>
-                <a class="nav-link" href="{{route('admin.logout')}}">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Đăng xuất</span>
-                </a>
-            </li>
-
-        </ul>
-        <br><br><br>
-    </aside>
-</div>
+          </li> --}}
+
+
+
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Học vấn</span>
+        </li>
+
+        <li class="menu-item">
+            <a href="" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-book"></i>
+                <div data-i18n="Account Settings">Khóa học</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('admin.category.index') }}" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-category' ></i>
+                <div data-i18n="Account">Danh mục</div>
+            </a>
+            </a>
+        </li>
+        <!-- User -->
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Người dùng</span></li>
+        <!-- Cards -->
+        <li class="menu-item">
+            <a href="{{ route('admin.getUser') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Basic">Danh sách người dùng</div>
+            </a>
+        </li>
+
+
+        <!-- Misc -->
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Settings</span></li>
+        <li class="menu-item">
+            <a href="{{route('settings', \Auth::user()->id)}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Support">Cài đặt</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('admin.logout') }}" target="_blank" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-log-out"></i>
+                <div data-i18n="Documentation">Đăng xuất</div>
+            </a>
+        </li>
+    </ul>
+</aside>
