@@ -22,13 +22,13 @@
           </li> --}}
 
 
-
+        {{-- Khóa học --}}
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Học vấn</span>
         </li>
 
         <li class="menu-item">
-            <a href="" class="menu-link">
+            <a href="{{route('admin.course.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-book"></i>
                 <div data-i18n="Account Settings">Khóa học</div>
             </a>
@@ -40,6 +40,18 @@
             </a>
             </a>
         </li>
+        {{-- Lớp học --}}
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Lớp học</span>
+        </li>
+
+        <li class="menu-item">
+            <a href="" class="menu-link">
+                <i class='menu-icon tf-icons bx bxs-book-open'></i>
+                <div data-i18n="Account Settings">Lớp học</div>
+            </a>
+        </li>
+
         <!-- User -->
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Người dùng</span></li>
         <!-- Cards -->
