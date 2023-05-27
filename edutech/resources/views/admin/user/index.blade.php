@@ -59,16 +59,14 @@
                                             @else
                                                 <td>Hoạt động</td>
                                             @endif
-                                            <td class="text-center mb-2" width="120">
-                                                <div class="btn-group dropdown table-actions">
-                                                    <button type="button" class="btn-transparent dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu text-left webinars-lists-dropdown"
-                                                        x-placement="bottom-start"
-                                                        style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 14px, 0px);">
-
+                                            
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
+                                                        data-bs-toggle="dropdown"><i
+                                                            class="bx bx-dots-vertical-rounded"></i></button>
+                                                    <div class="dropdown-menu">
+                                                       
                                                         <a href="{{ route('admin.user.edit.status', $user->id) }}"
                                                             class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
                                                             title="Quản lý truy cập">
@@ -84,6 +82,9 @@
                                                     </div>
                                                 </div>
                                             </td>
+
+
+
                                         </tr>
                                     @endforeach
                                     {{-- mẫu --}}

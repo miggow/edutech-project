@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('content')
-    <section class="section">
+    <section class="section section container-xxl flex-grow-1 container-p-y">
         <div class="section-header">
             <h1>Danh sách danh mục</h1>
         </div>
@@ -27,7 +27,7 @@
                                         <th width="120">Hành động</th>
                                     </tr>
                                     @foreach ($modules as $module)
-                                        <tr class="text-center">
+                                        <tr class="text-left">
                                             <td>{{ $module->id }}</td>
                                             <td width="18%" class="text-left">
                                                 {{ $module->name }}
@@ -38,13 +38,15 @@
                                             <td class="font-12">
                                                 {{ \Carbon\Carbon::parse($module->updated_at)->format('d/m/Y') }}</td>
 
-                                            <td width="200" class="">
-                                                <div class="btn-group dropdown table-actions">
-                                                    <button type="button" class="btn-transparent dropdown-toggle"
-                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu text-left webinars-lists-dropdown">
+                                            
+
+
+
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
+                                                        data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                                    <div class="dropdown-menu">
                                                         <a href="{{ route('admin.module.edit', $module->id) }}"
                                                             class="d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm text-primary mt-1 "
                                                             title="Chỉnh sửa">
@@ -57,13 +59,13 @@
                                                             <i class="fa fa-edit"></i>
                                                             <span class="ml-2">Bài học</span>
                                                         </a>
-                                                        <button
+                                                        <a
                                                             class="btn-transparent text-primary d-flex align-items-center text-dark text-decoration-none btn-transparent btn-sm mt-1 trigger--fire-modal-1"
                                                             data-confirm="Bạn có chắc? | Bạn có muốn tiếp tục không?"
                                                             data-confirm-href="{{ route('admin.module.delete', $module->id) }}"
                                                             data-confirm-text-yes="Có" data-confirm-text-cancel="Bỏ qua">
                                                             <i class="fa fa-times"></i><span class="ml-2">Xóa</span>
-                                                        </button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </td>

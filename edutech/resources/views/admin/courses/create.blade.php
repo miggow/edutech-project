@@ -1,6 +1,6 @@
 @extends('admin.layout')
 
-@push('styles_top')
+{{-- @push('styles_top')
     <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/bootstrap-timepicker/bootstrap-timepicker.min.css">
@@ -17,9 +17,10 @@
             z-index: 1212 !important;
         }
     </style>
-@endpush
+@endpush --}}
 
 @section('content')
+<div class="container-xxl flex-grow-1 container-p-y">
     <section class="section">
         <div class="section-header">
             <h1>Thêm khóa học</h1>
@@ -40,7 +41,7 @@
                                         <div class="col-12 col-md-5">
 
 
-                                            {{-- <div class="form-group mt-15 ">
+                                            {{-- <div class="form-group mb-3 ">
                                                 <label class="input-label d-block">{{ trans('lms/panel.course_type') }}</label>
 
                                                 <select name="type" class="custom-select @error('type')  is-invalid @enderror">
@@ -56,7 +57,7 @@
                                                 @enderror
                                             </div> --}}
 
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Tiêu đề</label>
                                                 <input type="text" name="title"  class="form-control @error('title')  is-invalid @enderror" placeholder=""/>
                                                 @error('title')
@@ -66,7 +67,7 @@
                                                 @enderror
                                             </div>
 
-                                            {{-- <div class="form-group mt-15">
+                                            {{-- <div class="form-group mb-3">
                                                 <label class="input-label">{{ trans('lms/update.points') }}</label>
                                                 <input type="text" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
                                                 @error('points')
@@ -76,7 +77,7 @@
                                                 @enderror
                                             </div> --}}
 
-                                            {{-- <div class="form-group mt-15">
+                                            {{-- <div class="form-group mb-3">
                                                 <label class="input-label">{{ trans('lms/admin/main.class_url') }}</label>
                                                 <input type="text" name="slug" value="{{ !empty($webinar) ? $webinar->slug : old('slug') }}" class="form-control @error('slug')  is-invalid @enderror" placeholder=""/>
                                                 <div class="text-muted text-small mt-1">{{ trans('lms/admin/main.class_url_hint') }}</div>
@@ -88,7 +89,7 @@
                                             </div> --}}
                                             {{--
                                             @if(!empty($webinar) and $webinar->creator->isOrganization())
-                                                <div class="form-group mt-15 ">
+                                                <div class="form-group mb-3 ">
                                                     <label class="input-label d-block">{{ trans('lms/admin/main.organization') }}</label>
 
                                                     <select class="form-control" disabled readonly data-placeholder="{{ trans('lms/public.search_instructor') }}">
@@ -98,7 +99,7 @@
                                             @endif --}}
 
 
-                                            <div class="form-group mt-15 ">
+                                            <div class="form-group mb-3 ">
                                                 <label class="input-label d-block">Giảng viên</label>
 
                                                 <select name="teacher_id" data-search-option="just_teacher_role" class="form-control search-user-select2"
@@ -119,22 +120,23 @@
 
 
 
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Ảnh thu nhỏ (thumbnail)</label>
                                                 <div class="input-group">
                                                     <div class="form-group">
-                                                        <input type="file" name="thumbnail" class="form-control-file" id="thumbnail">
+                                                        <input type="file" name="thumbnail" class="form-control" id="thumbnail">
                                                     </div>
 
                                                 </div>
                                             </div>
 
 
-                                            <div class="form-group mt-15">
+
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Ảnh bìa</label>
                                                 <div class="input-group">
                                                     <div class="form-group">
-                                                        <input type="file" name="cover_image" class="form-control-file" id="cover_image" value="{{$course->bg ?? ''}}">
+                                                        <input type="file" name="cover_image" class="form-control" id="cover_image" value="{{$course->bg ?? ''}}">
                                                     </div>
 
                                                 </div>
@@ -146,7 +148,7 @@
                                                 <label class="input-label font-12">Video</label>
                                                 <div class="input-group">
                                                     <div class="form-group">
-                                                        <input type="file" name="video" class="form-control-file" id="video" value="{{$course->video ?? ''}}">
+                                                        <input type="file" name="video" class="form-control" id="video" value="{{$course->video ?? ''}}">
                                                     </div>
 
                                                 </div>
@@ -154,9 +156,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row ">
                                         <div class="col-12">
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Mô tả</label>
                                                 {{-- {!! !empty($webinar) ? $webinar->description : old('description')  !!} --}}
                                                 <textarea name="description" class="form-control @error('description')  is-invalid @enderror"></textarea>
@@ -177,7 +179,7 @@
 
                                             {{-- @if(empty($webinar) or (!empty($webinar) and $webinar->isWebinar()))
 
-                                                <div class="form-group mt-15 js-capacity {{ (!empty(old('type')) and old('type') != \App\Models\LMS\Webinar::$webinar) ? 'd-none' : '' }}">
+                                                <div class="form-group mb-3 js-capacity {{ (!empty(old('type')) and old('type') != \App\Models\LMS\Webinar::$webinar) ? 'd-none' : '' }}">
                                                     <label class="input-label">{{ trans('lms/public.capacity') }}</label>
                                                     <input type="number" name="capacity" value="{{ !empty($webinar) ? $webinar->capacity : old('capacity') }}" class="form-control @error('capacity')  is-invalid @enderror"/>
                                                     @error('capacity')
@@ -188,7 +190,7 @@
                                                 </div>
                                             @endif --}}
 
-                                            <div class="row mt-15">
+                                            <div class="row mb-3">
                                                 {{-- @if(empty($webinar) or (!empty($webinar) and $webinar->isWebinar()))
                                                     <div class="col-12 col-md-6 js-start_date {{ (!empty(old('type')) and old('type') != \App\Models\LMS\Webinar::$webinar) ? 'd-none' : '' }}">
                                                         <div class="form-group">
@@ -216,7 +218,7 @@
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
                                                                 <span class="input-group-text" id="timeInputGroupPrepend">
-                                                                    <i class="fa fa-clock"></i>
+                                                                   <i class='bx bx-sm bxs-time'></i>
                                                                 </span>
                                                             </div>
 
@@ -306,7 +308,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">{{ trans('lms/update.access_days') }}</label>
                                                 <input type="text" name="access_days" value="{{ !empty($webinar) ? $webinar->access_days : old('access_days') }}" class="form-control @error('access_days')  is-invalid @enderror"/>
                                                 @error('access_days')
@@ -317,7 +319,7 @@
                                                 <p class="mt-1">- {{ trans('lms/update.access_days_input_hint') }}</p>
                                             </div> --}}
 
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Giá</label>
                                                 {{-- value="{{ !empty($webinar) ? $webinar->price : old('price') }}" --}}
                                                 <input type="text" name="price"  class="form-control @error('price')  is-invalid @enderror" placeholder="Nhập 0 nếu là khóa học miễn phí"/>
@@ -327,7 +329,7 @@
                                                 </div>
                                                 @enderror --}}
                                             </div>
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Giá khuyến mãi</label>
                                                 {{-- value="{{ !empty($webinar) ? $webinar->price : old('price') }}" --}}
                                                 <input type="text" name="pre_price"  class="form-control @error('pre_price')  is-invalid @enderror" placeholder="Giá khuyến mãi (nhập nếu có)"/>
@@ -340,7 +342,7 @@
 
 
 
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <label class="input-label">Danh mục</label>
 
                                                 <select name="category" data-search-option="just_teacher_role" class="form-control search-user-select2"
@@ -362,7 +364,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- <div class="form-group mt-15 {{ (!empty($webinarCategoryFilters) and count($webinarCategoryFilters)) ? '' : 'd-none' }}" id="categoriesFiltersContainer">
+                                    {{-- <div class="form-group mb-3 {{ (!empty($webinarCategoryFilters) and count($webinarCategoryFilters)) ? '' : 'd-none' }}" id="categoriesFiltersContainer">
                                         <span class="input-label d-block">{{ trans('lms/public.category_filters') }}</span>
                                         <div id="categoriesFiltersCard" class="row mt-3">
 
@@ -664,7 +666,7 @@
                                     <h2 class="section-title after-line">{{ trans('lms/public.message_to_reviewer') }}</h2>
                                     <div class="row">
                                         <div class="col-12">
-                                            <div class="form-group mt-15">
+                                            <div class="form-group mb-3">
                                                 <textarea name="message_for_reviewer" rows="10" class="form-control">{{ (!empty($webinar) && $webinar->message_for_reviewer) ? $webinar->message_for_reviewer : old('message_for_reviewer') }}</textarea>
                                             </div>
                                         </div>
@@ -674,7 +676,7 @@
                                 <input type="hidden" name="draft" value="no" id="forDraft"/>
 
 
-                                        <button type="submit" class="btn btn-success">Lưu và tiếp tục</button>
+                                        <button type="submit" class="btn btn-primary">Lưu và tiếp tục</button>
 
                                         {{-- @if(!empty($webinar))
                                             <button type="button" id="saveReject" class="btn btn-warning">{{ trans('lms/public.reject') }}</button>
@@ -708,21 +710,12 @@
             </div>
         </div>
     </section>
+</div>
 @endsection
 
-@push('scripts_bottom')
 
-
-    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-    <script src="/assets/default/vendors/select2/select2.min.js"></script>
-    <script src="/assets/default/vendors/moment.min.js"></script>
-    <script src="/assets/default/vendors/daterangepicker/daterangepicker.min.js"></script>
-    <script src="/assets/default/vendors/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
-    <script src="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-    <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
-    <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
-    <script src="/ckeditor/ckeditor.js"></script>
+@section('js')
+<script src="/ckeditor/ckeditor.js"></script>
     <script>
         ClassicEditor
             .create( document.querySelector( 'textarea[name="description"]' ), {
@@ -735,6 +728,5 @@
                 console.error( error );
             } );
     </script>
-    <script src="/assets/default/js/admin/quiz.min.js"></script>
-    <script src="/assets/admin/js/webinar.min.js"></script>
-@endpush
+@endsection
+

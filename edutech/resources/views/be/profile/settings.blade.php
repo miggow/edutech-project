@@ -79,7 +79,7 @@
                                     <!-- Social Accounts -->
                                     <div class="d-flex mb-3">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets1/img/icons/brands/facebook.png" alt="facebook"
+                                            <img src="../assets/img/icons/brands/facebook.png" alt="facebook"
                                                 class="me-3" height="30" />
                                         </div>
                                         <div class="flex-grow-1 row">
@@ -98,7 +98,7 @@
                                     </div>
                                     <div class="d-flex mb-3">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets1/img/icons/brands/twitter.png" alt="twitter"
+                                            <img src="../assets/img/icons/brands/twitter.png" alt="twitter"
                                                 class="me-3" height="30" />
                                         </div>
                                         <div class="flex-grow-1 row">
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="d-flex mb-3">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets1/img/icons/brands/instagram.png" alt="instagram"
+                                            <img src="../assets/img/icons/brands/instagram.png" alt="instagram"
                                                 class="me-3" height="30" />
                                         </div>
                                         <div class="flex-grow-1 row">
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="d-flex mb-3">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets1/img/icons/brands/github.png" alt="github"
+                                            <img src="../assets/img/icons/brands/github.png" alt="github"
                                                 class="me-3" height="30" />
                                         </div>
                                         <div class="flex-grow-1 row">
@@ -186,7 +186,7 @@
     </div>
 </div>
 <!-- Page JS -->
-<script src="{{ asset('assets1/js/pages-account-settings-account.js') }}"></script>
+<script src="{{ asset('assets/js/pages-account-settings-account.js') }}"></script>
 @section('js')
     <script>
         $(document).ready(function() {

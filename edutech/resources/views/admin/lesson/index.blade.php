@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('content')
-    <section class="section">
+    <section class="section section container-xxl flex-grow-1 container-p-y">
         <div class="section-header">
             <h1>Danh sách bài học</h1>
         </div>
