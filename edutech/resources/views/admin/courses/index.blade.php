@@ -2,6 +2,11 @@
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4">Danh sách khóa học</h4>
+        {{-- @if ($authUser->can('admin_webinars_export_excel')) --}}
+        <div class="text-right">
+            <a href="{{ route('admin.course.create') }}" class="btn btn-primary">Thêm khóa học</a>
+        </div>
+        {{-- @endif --}}
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -36,8 +41,8 @@
                             </td>
                             <td class="text-left">Huỳnh Thị Liên</td>
                             <td>{{ $course->current_price == 0 ? 'Miễn phí' : number_format($course->current_price, 0, '', '.') }}
-                                </td>
-                            <td>{{ number_format($course->previous_price, 0, '', '.')  ?? 'Không có' }}</td>
+                            </td>
+                            <td>{{ number_format($course->previous_price, 0, '', '.') ?? 'Không có' }}</td>
                             <td class="font-12">
                                 <a href="#" target="_blank" class="">3</a>
                             </td>
@@ -60,8 +65,8 @@
                                                 class="bx bx-edit-alt me-2"></i>Edit</a>
                                         <a class="dropdown-item" href="{{ route('admin.course.delete', $course->id) }}"><i
                                                 class="bx bx-trash me-2"></i>Delete</a>
-                                        <a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#basicModal" data-id ="{{$course->id}}"><i class='bx bxs-folder-plus me-2'></i>Module
+                                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#basicModal"
+                                            data-id="{{ $course->id }}"><i class='bx bxs-folder-plus me-2'></i>Module
                                         </a>
                                     </div>
                                 </div>
