@@ -1,78 +1,11 @@
 @extends('admin.layout')
 @section('content')
-    <section class="section">
+    <section class="section container-xxl flex-grow-1 container-p-y">
         <div class="section-header">
             <h1>Danh sách người dùng</h1>
         </div>
 
-        <div class="section-body">
-
-
-
-            <section class="card">
-                <div class="card-body">
-                    <form method="get" class="mb-0">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">Tìm kiếm</label>
-                                    <input name="title" type="text" class="form-control"
-                                        value="{{ request()->get('title') }}">
-                                </div>
-                            </div>
-
-
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">Giảng viên</label>
-                                    <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
-                                        class="form-control search-user-select2" data-placeholder="Search teachers">
-
-                                        {{-- @if (!empty($teachers) and $teachers->count() > 0)
-                                            @foreach ($teachers as $teacher)
-                                                <option value="{{ $teacher->id }}" selected>{{ $teacher->full_name }}</option>
-                                            @endforeach
-                                        @endif --}}
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">Danh mục</label>
-                                    <select name="category_id" data-plugin-selectTwo class="form-control populate">
-                                        <option value="">Tất cả danh mục</option>
-
-
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label class="input-label">Trạng thái</label>
-                                    <select name="status" data-plugin-selectTwo class="form-control populate">
-                                        <option value="">Tất cả trạng thái</option>
-
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <div class="form-group mt-1">
-                                    <label class="input-label mb-4"> </label>
-                                    <input type="submit" class="text-center btn btn-primary w-100" value="Xem kết quả">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
+        <div class="section-body ">
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="card">

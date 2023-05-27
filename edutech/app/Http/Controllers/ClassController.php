@@ -26,7 +26,7 @@ class ClassController extends Controller
      */
     public function create()
     {
-        //
+        return view('be.class.create');
     }
 
     /**
@@ -46,11 +46,19 @@ class ClassController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('be.class.show');
     }
 
+    public function detail()
+    {
+        return view('be.class.show');
+    }
+    public function baigiangdetail()
+    {
+        return view('be.class.baigiangdetail');
+    }
     /**
      * Show the form for editing the specified resource.
      *
